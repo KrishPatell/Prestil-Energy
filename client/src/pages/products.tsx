@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 import { CTASection } from "@/components/cta-section";
+import { TechnicalResources } from "@/components/technical-resources";
 
 // Real product images from KHEMZ-IPEC
 const pumpImage = "/images/products/centrifugal-pump-25-1.png";
@@ -829,6 +830,9 @@ export default function Products() {
 
       {/* Featured Products */}
       <FeaturedProductsGrid />
+
+      {/* Technical Resources */}
+      <TechnicalResources />
 
       {/* CTA Section */}
       <CTASection />

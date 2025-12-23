@@ -10,7 +10,14 @@ const featuredProducts = [
     subtitle: "GS5-200",
     description: "Advanced gas separator-disperser combining separation and dispersion functions for enhanced well performance in high gas content applications.",
     image: "/images/products/gas-separator-disperser-gs5-200.png",
+    category: "gas-separators",
     href: "/products#gas-separator-disperser",
+    specs: {
+      "Type": "Separator-Disperser",
+      "Model": "GS5-200",
+      "Application": "High Gas Content Wells",
+      "Standard": "API/ISO"
+    }
   },
   {
     id: 2,
@@ -18,7 +25,14 @@ const featuredProducts = [
     subtitle: "GS5-200",
     description: "Gas separator for oil and gas production wells, designed to separate gas from formation fluid before it enters the pump.",
     image: "/images/products/gas-separator-gs5-200.png",
+    category: "gas-separators",
     href: "/products#gas-separator",
+    specs: {
+      "Type": "Gas Separator",
+      "Model": "GS5-200",
+      "Application": "Oil & Gas Wells",
+      "Standard": "API/ISO"
+    }
   },
   {
     id: 3,
@@ -26,7 +40,14 @@ const featuredProducts = [
     subtitle: "DNP Series",
     description: "Hermetic dosing plunger pump units for precise metering of chemicals and additives in oil & gas production applications.",
     image: "/images/products/dosing-pump-dnp-2500-10.png",
+    category: "dosing-pumps",
     href: "/products#dosing-pumps",
+    specs: {
+      "Power": "3.0 - 4.0 kW",
+      "Design": "Hermetic",
+      "Type": "Plunger Pump",
+      "Applications": "Chemical Injection"
+    }
   },
   {
     id: 4,
@@ -34,7 +55,14 @@ const featuredProducts = [
     subtitle: "Motor Protection",
     description: "Single-housing motor protectors designed to prevent well fluid from entering the motor and compensate for pressure changes.",
     image: "/images/products/motor-single-section-103-1.png",
+    category: "protection",
     href: "/products#motor-protectors",
+    specs: {
+      "Type": "Diaphragm & Seal",
+      "Pressure Rating": "Up to 400 bar",
+      "Temperature": "High resistance",
+      "Integration": "Single housing"
+    }
   },
   {
     id: 5,
@@ -42,7 +70,14 @@ const featuredProducts = [
     subtitle: "125 m³/day",
     description: "Multistage submersible centrifugal pump with rated delivery of 125 m³/day for high-volume production wells.",
     image: "/images/products/centrifugal-pump-125-1.png",
+    category: "pumps",
     href: "/products#centrifugal-pump-125",
+    specs: {
+      "Housing Diameter": "92 mm",
+      "Rated Delivery": "125 m³/day",
+      "Head Range": "480-2,950 m",
+      "MTTF": "17,500 hours"
+    }
   },
   {
     id: 6,
@@ -50,7 +85,14 @@ const featuredProducts = [
     subtitle: "200 m³/day",
     description: "Multistage submersible centrifugal pump with rated delivery of 200 m³/day for maximum production applications.",
     image: "/images/products/centrifugal-pump-200-1.png",
+    category: "pumps",
     href: "/products#centrifugal-pump-200",
+    specs: {
+      "Housing Diameter": "92 mm",
+      "Rated Delivery": "200 m³/day",
+      "Head Range": "290-2,400 m",
+      "MTTF": "17,500 hours"
+    }
   },
 ];
 
@@ -96,7 +138,6 @@ export function FeaturedProductsGrid() {
                       alt={product.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-primary/90 text-primary-foreground text-xs font-semibold uppercase tracking-wider">
                         Products
@@ -110,9 +151,22 @@ export function FeaturedProductsGrid() {
                     {product.subtitle && (
                       <p className="text-primary text-sm font-medium mb-4">{product.subtitle}</p>
                     )}
-                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-6 flex-grow">
+                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3 mb-4 flex-grow">
                       {product.description}
                     </p>
+                    
+                    {/* Specifications */}
+                    {product.specs && (
+                      <div className="grid grid-cols-2 gap-2 mb-4">
+                        {Object.entries(product.specs).slice(0, 2).map(([key, value]) => (
+                          <div key={key} className="bg-secondary border border-border p-2 rounded-sm">
+                            <span className="text-xs text-muted-foreground/60 uppercase tracking-wider block mb-1">{key}</span>
+                            <span className="text-xs text-foreground font-medium">{value}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    
                     <div className="flex items-center gap-2 text-primary text-sm font-semibold group-hover:gap-4 transition-all mt-auto">
                       <span>View Details</span>
                       <ArrowRight className="w-4 h-4" />

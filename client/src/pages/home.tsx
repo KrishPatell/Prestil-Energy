@@ -3,7 +3,10 @@ import { ArrowRight, CheckCircle2, Shield, Zap, Factory, Globe, Award, Gauge } f
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useEffect, useState } from "react";
-import { ProductGallery } from "@/components/product-gallery";
+import { FeaturedProductsGrid } from "@/components/featured-products-grid";
+import { CTASection } from "@/components/cta-section";
+import { TechnicalResources } from "@/components/technical-resources";
+import { FAQSection } from "@/components/faq-section";
 
 // Real images from public folder
 const heroImage = "/images/dark_cinematic_offshore_oil_rig_at_night_with_orange_lights.png";
@@ -195,7 +198,7 @@ export default function Home() {
                   <item.icon className="w-6 h-6 text-primary" />
                   </div>
                 <div className="flex items-baseline justify-center gap-1 mb-2">
-                  <span className="text-4xl md:text-5xl font-display text-foreground">{item.value}</span>
+                  <span className="text-4xl md:text-5xl font-display font-medium text-foreground">{item.value}</span>
                   <span className="text-xl text-primary font-semibold">{item.unit}</span>
                     </div>
                 <p className="text-sm text-muted-foreground uppercase tracking-wider">{item.label}</p>
@@ -273,90 +276,12 @@ export default function Home() {
         </div>
       </section>
 
-              {/* Product Gallery Section */}
-              <ProductGallery />
 
-      {/* Products Section */}
-              <section className="py-24 bg-secondary">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="h-px w-12 bg-primary" />
-              <span className="text-primary text-sm font-semibold tracking-widest uppercase">Our Products</span>
-              <div className="h-px w-12 bg-primary" />
-            </div>
-            <h2 className="section-title mb-6">
-              Submersible Equipment<br />
-              <span className="text-primary">For Oil Production</span>
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Reliable, high-performance submersible pumps and motors engineered for demanding well conditions.
-            </p>
-          </motion.div>
+      {/* Featured Products */}
+      <FeaturedProductsGrid />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {products.map((product, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15, duration: 0.6 }}
-              >
-                <Link href={product.href} className="block group">
-                  <div className="bg-card border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 hover:shadow-lg">
-                    <div className="aspect-[4/3] bg-muted relative overflow-hidden">
-                    <img
-                      src={product.image}
-                        alt={product.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
-                    </div>
-                    <div className="p-8">
-                      <h3 className="text-2xl font-display text-foreground mb-4 whitespace-pre-line group-hover:text-primary transition-colors">
-                        {product.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                        {product.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {product.specs.map((spec, i) => (
-                          <span key={i} className="px-3 py-1 bg-secondary border border-border text-xs text-muted-foreground">
-                            {spec}
-                          </span>
-                        ))}
-                      </div>
-                      <div className="flex items-center gap-2 text-primary text-sm font-semibold group-hover:gap-4 transition-all">
-                        <span>View Details</span>
-                        <ArrowRight className="w-4 h-4" />
-                      </div>
-                  </div>
-            </div>
-            </Link>
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mt-12"
-          >
-            <Link href="/products">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold h-14 px-10 text-sm rounded-sm">
-                View All Products
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
+      {/* Technical Resources */}
+      <TechnicalResources />
 
       {/* Why Choose Us */}
       <section className="py-24 bg-background relative overflow-hidden">
@@ -427,38 +352,11 @@ export default function Home() {
         </div>
       </section>
 
-              {/* CTA Section */}
-              <section className="py-24 bg-primary relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/dark_cinematic_offshore_oil_rig_at_night_with_orange_lights.png')] bg-cover bg-center opacity-20" />
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-3xl mx-auto"
-          >
-            <h2 className="text-4xl md:text-5xl font-display text-white mb-6">
-              Ready To Partner With<br />
-              Prestil Energy?
-            </h2>
-            <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-              Our technical and commercial teams are available for discussions, technical clarifications, and pilot supply projects.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold h-14 px-10 text-sm rounded-sm">
-                  Request A Quote
-                </Button>
-              </Link>
-              <Link href="/products">
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-14 px-10 text-sm rounded-sm">
-                  Download Catalogue
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <FAQSection />
+
+      {/* CTA Section */}
+      <CTASection />
 
     </div>
   );

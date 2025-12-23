@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 import { CTASection } from "@/components/cta-section";
+import { TechnicalResources } from "@/components/technical-resources";
 
 const manufacturingImage = "/images/high-tech_manufacturing_facility_interior.png";
 
@@ -345,6 +346,9 @@ export default function Manufacturing() {
 
       {/* Featured Products */}
       <FeaturedProductsGrid />
+
+      {/* Technical Resources */}
+      <TechnicalResources />
 
       {/* CTA Section */}
       <CTASection />

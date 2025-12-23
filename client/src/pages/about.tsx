@@ -2,47 +2,9 @@ import { motion } from "framer-motion";
 import { CheckCircle2, Factory, Award, Users, Globe } from "lucide-react";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 import { CTASection } from "@/components/cta-section";
+import { TechnicalResources } from "@/components/technical-resources";
 
 const manufacturingImage = "/images/high-tech_manufacturing_facility_interior.png";
-
-const milestones = [
-  { 
-    year: "1995", 
-    title: "Company Founded", 
-    description: "Established on the basis of Kharkiv Electromechanical Plant facilities.",
-    image: "/images/high-tech_manufacturing_facility_interior.png"
-  },
-  { 
-    year: "2002", 
-    title: "M5 Series Launch", 
-    description: "Introduced advanced M5 series electric motors with enhanced insulation.",
-    image: "/images/industrial_electric_motor_studio_shot.png"
-  },
-  { 
-    year: "2006", 
-    title: "Pump Production", 
-    description: "Launched Ø92mm pumps with capacities of 50, 80, and 125 m³/day.",
-    image: "/images/3d_technical_render_of_submersible_pump.png"
-  },
-  { 
-    year: "2015", 
-    title: "Range Expansion", 
-    description: "Extended pump range to 25-200 m³/day with heads up to 4,000m.",
-    image: "/images/3d_technical_render_of_submersible_pump.png"
-  },
-  { 
-    year: "2021", 
-    title: "400-Series Production", 
-    description: "Serial production of 400-series pumps and motors launched.",
-    image: "/images/industrial_electric_motor_studio_shot.png"
-  },
-  { 
-    year: "2024", 
-    title: "U.S. Market Entry", 
-    description: "Initiated deliveries to U.S. market with local support infrastructure.",
-    image: "/images/dark_cinematic_offshore_oil_rig_at_night_with_orange_lights.png"
-  },
-];
 
 const capabilities = [
   "Blanking and stamping operations",
@@ -207,77 +169,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-24 bg-secondary border-y border-border">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-3xl mx-auto text-center mb-16"
-          >
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="h-px w-12 bg-primary" />
-              <span className="text-primary text-sm font-semibold tracking-widest uppercase">Our Journey</span>
-              <div className="h-px w-12 bg-primary" />
-            </div>
-                    <h2 className="section-title">
-                      Key<br />
-                      <span className="text-primary">Milestones</span>
-                    </h2>
-          </motion.div>
-
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.6 }}
-                  className="group"
-                >
-                  <div className="bg-card border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 hover:shadow-xl rounded-sm h-full flex flex-col">
-                    {/* Image */}
-                    <div className="relative aspect-[4/3] bg-secondary overflow-hidden">
-                      <img
-                        src={milestone.image}
-                        alt={milestone.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60" />
-                      
-                      {/* Year Badge */}
-                      <div className="absolute top-4 left-4">
-                        <div className="bg-primary px-4 py-2">
-                          <span className="text-2xl font-display text-primary-foreground">{milestone.year}</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="p-6 flex-grow flex flex-col">
-                      <h3 className="text-xl font-display text-foreground mb-3 group-hover:text-primary transition-colors">
-                        {milestone.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
-                        {milestone.description}
-                      </p>
-                      
-                      {/* Decorative line */}
-                      <div className="mt-4 pt-4 border-t border-border">
-                        <div className="h-1 w-12 bg-primary group-hover:w-20 transition-all duration-300" />
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Global Presence */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
@@ -339,6 +230,9 @@ export default function About() {
 
       {/* Featured Products */}
       <FeaturedProductsGrid />
+
+      {/* Technical Resources */}
+      <TechnicalResources />
 
       {/* CTA Section */}
       <CTASection />
