@@ -1,0 +1,315 @@
+🚀 FINAL MASTER WEBSITE-GENERATION PROMPT (Option B — Technical Oil & Gas Website)
+📘 Source Catalogue: Submersible Equipment for Oil Production
+Reference:
+
+You are an expert UX designer + senior front-end engineer with 20 years of experience creating high-performance industrial, engineering, and oil & gas sector websites. Your task is to convert the attached PDF catalogue —
+
+“Catalogue – Submersible Equipment for Oil Production”
+Source:
+
+— into a fully specified, dark-themed, investor-grade, production-ready website, optimized for oil & gas buyers, procurement managers, and technical specialists.
+
+🚨 CRITICAL RULES
+
+Use the sitemap defined below (Option B):
+
+Home
+
+Submersible Pumps
+
+Electric Motors
+
+Manufacturing & QA
+
+Technical Specifications Tables
+
+Contact
+
+YOU must design the sections inside each page.
+Do NOT ask the user.
+Do NOT copy generic templates.
+Use the PDF content to infer what each page MUST contain.
+
+Every piece of content MUST map to a page number in the PDF.
+Use this format:
+
+“Source: Page X — Description — ”
+
+All technical specs, tables, diagrams and definitions must use the PDF verbatim.
+If missing: output TODO: extract from page X.
+
+🔶 BRAND COLOR SYSTEM (MANDATORY)
+
+Use EXACT hex values:
+
+Primary Orange — #FF8C00
+
+Deep Blue — #1E3A8A
+
+Light Blue → White Gradient — #E0F2FE → #FFFFFF
+
+Accent Red — #DC2626
+
+Dark Grey — #6B7280
+
+White — #FFFFFF
+
+Theme: ultra-premium industrial dark theme, high-reliability engineering feel.
+
+🟦 NOW PRODUCE ALL 12 DELIVERABLES BELOW
+1) DESIGN BRIEF & VISUAL SYSTEM
+
+Provide:
+
+✔ Full design brief
+
+Tone, energy-sector aesthetic, dark theme rationale.
+
+✔ Visual system
+
+Include color usage rules, gradients, contrast, spacing scales, iconography style.
+
+✔ Images
+
+Extract image identity from:
+
+Manufacturing (pages 2–4)
+
+Submersible Pumps (pages 5–10)
+
+Electric Motors (pages 11–20)
+
+✔ Tailwind token set
+
+Provide a tailwind.config.js snippet.
+
+✔ Accessibility
+
+WCAG AA compliance notes.
+
+2) TECH STACK & LIBRARIES
+
+Provide justified choices:
+
+Next.js + React 18
+
+Tailwind CSS
+
+Headless UI / Radix
+
+Framer Motion
+
+Lottie animations
+
+Next/Image with AVIF/WebP
+
+Sanity or Contentful CMS (choose and justify)
+
+Vercel deployment
+
+SendGrid + Airtable/HubSpot for forms
+
+GA4 analytics
+
+Explain WHY each is appropriate for an oil & gas industrial website.
+
+3) PAGE-BY-PAGE ARCHITECTURE (YOUR CHOSEN OPTION B)
+
+For each page:
+
+Required pages:
+
+Home
+
+Submersible Pumps
+
+Electric Motors
+
+Manufacturing & QA
+
+Technical Specifications Tables
+
+Contact
+
+For each page you MUST provide:
+
+Section list (you design them)
+
+What belongs in each section & why
+
+Which PDF pages supply the content
+
+Why this page matters for the buyer/investor
+
+Example (you will expand dramatically):
+
+“Submersible Pumps → Overview section uses Pages 5–7.”
+
+4) CONTENT MAPPING TABLE (MANDATORY)
+
+A table with columns:
+
+| PDF Page | Slide Content Summary | Website Page | Section | Copy Used (verbatim/UI-edited) | Image Filename |
+
+Map all 20 pages including the engineering tables:
+
+Page 8 (Operating Medium table)
+
+Pages 16–20 (Electric Motor Specs tables)
+
+Each row MUST cite PDF pages via:
+
+
+5) UX PATTERNS, COMPONENTS & MICRO-INTERACTIONS
+
+Define all reusable components:
+
+Header
+
+Mobile drawer
+
+Hero banner
+
+Product category cards
+
+Pump card
+
+Motor card
+
+Technical tables
+
+Accordion
+
+Image gallery
+
+Lightbox
+
+Contact form
+
+Footer
+
+Cookie consent
+
+For each component provide:
+
+Props
+
+Accessibility rules
+
+Hover, focus, loading states
+
+Framer Motion animation snippets
+
+Easing + timing values
+
+6) PERFORMANCE, SEO & ANALYTICS
+
+Provide technical checklist:
+
+AVIF/WebP conversion
+
+Preload hero images
+
+Lazy load technical tables
+
+JSON-LD schemas:
+
+Organization
+
+Product
+
+Technical Specification
+
+OG images
+
+GA4 events:
+
+“SpecTable_View”
+
+“MotorModel_Click”
+
+“PumpModel_Click”
+
+“Contact_Submitted”
+
+7) CMS & CONTENT WORKFLOW
+
+Select CMS (Sanity recommended unless justified) and define schemas:
+
+PumpModel
+
+MotorModel
+
+TechnicalSpecTable
+
+ManufacturingCapability
+
+TestingStandard
+
+GalleryImage
+
+ContactLead
+
+Define:
+
+Field types
+
+Relationships
+
+Editorial workflow
+
+Draft → Review → Publish flow
+
+Preview environment logic
+
+9) QA, TESTS & DELIVERY CHECKLIST
+
+Provide:
+
+✔ Jest unit test suite
+✔ Playwright E2E suite
+✔ Accessibility checks
+✔ Cross-browser QA
+✔ Lighthouse performance targets (>90)
+10) PACKAGING & HANDOFF
+
+Provide:
+
+Repo structure
+
+File organization
+
+Components folder
+
+/public/images/pumps /motors /manufacturing
+
+Build/Deploy commands
+
+README structure
+
+Asset export list (with filenames & PDF source pages)
+
+11) CODE SNIPPETS
+
+Provide functional React/Tailwind examples for:
+
+Header
+
+Hero
+
+Contact Form w/ serverless POST
+
+(Short, real, working code.)
+
+12) LLM EXECUTION CHECKLIST (MUST APPEAR VERBATIM AT END)
+
+Copy this EXACTLY into your final output:
+
+LLM EXECUTION CHECKLIST — COPY EXACTLY
+
+Step 1 — Load the attached PDF: Catalogue – Submersible Equipment for Oil Production. Treat it as the ONLY source of product info. Source:
+Step 2 — Analyze all 20 pages and populate the sitemap: Home, Submersible Pumps, Electric Motors, Manufacturing & QA, Technical Specifications Tables, Contact.
+Step 3 — Build all deliverables 1–11 exactly as defined.
+Step 4 — Map every piece of content to PDF page numbers.
+Step 5 — If content is missing: output TODO: extract from page X.
+Step 6 — Output the entire result as one structured, developer-ready document.
