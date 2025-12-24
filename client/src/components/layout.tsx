@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, ChevronRight, Phone, Mail, MapPin, Linkedin, ArrowUpRight, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { CatalogRequestDialog } from "@/components/catalog-request-dialog";
 
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
@@ -55,6 +56,7 @@ function useTheme() {
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isCatalogDialogOpen, setIsCatalogDialogOpen] = useState(false);
   const [location] = useLocation();
   const { isDark, toggleTheme } = useTheme();
 
@@ -97,11 +99,12 @@ export function Navbar() {
             )}
           </button>
 
-          <Link href="/contact">
-            <Button className="bg-primary hover:bg-primary/90 text-white font-semibold text-sm h-10 px-6 rounded-sm">
-              Request Quote
-            </Button>
-          </Link>
+          <Button 
+            className="bg-primary hover:bg-primary/90 text-white font-semibold text-sm h-10 px-6 rounded-sm"
+            onClick={() => setIsCatalogDialogOpen(true)}
+          >
+            Request Quote
+          </Button>
         </nav>
 
         {/* Mobile Nav */}
@@ -144,17 +147,22 @@ export function Navbar() {
                   ))}
                 </nav>
                 <div className="mt-auto pt-8">
-                  <Link href="/contact">
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-white font-semibold rounded-sm h-12" onClick={() => setIsOpen(false)}>
-                      Request Quote
-                    </Button>
-                  </Link>
+                  <Button 
+                    className="w-full bg-primary hover:bg-primary/90 text-white font-semibold rounded-sm h-12" 
+                    onClick={() => {
+                      setIsOpen(false);
+                      setIsCatalogDialogOpen(true);
+                    }}
+                  >
+                    Request Quote
+                  </Button>
                 </div>
               </div>
             </SheetContent>
           </Sheet>
         </div>
       </div>
+      <CatalogRequestDialog open={isCatalogDialogOpen} onOpenChange={setIsCatalogDialogOpen} />
     </header>
   );
 }

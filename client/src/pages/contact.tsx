@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -18,6 +19,7 @@ import { Mail, MapPin, ArrowRight, Phone, Globe, Flag, Factory } from "lucide-re
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
+import { CatalogRequestDialog } from "@/components/catalog-request-dialog";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqanbwl";
 
@@ -37,6 +39,7 @@ const formSchema = z.object({
 
 export default function Contact() {
   const { toast } = useToast();
+  const [isCatalogDialogOpen, setIsCatalogDialogOpen] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -431,12 +434,18 @@ export default function Contact() {
                 Request our detailed product catalogue with full specifications.
               </p>
             </div>
-            <Button className="bg-primary hover:bg-primary/90 text-white font-semibold h-12 px-8">
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-white font-semibold h-12 px-8"
+              onClick={() => setIsCatalogDialogOpen(true)}
+            >
               Request Catalogue
             </Button>
         </div>
       </div>
       </section>
+
+      {/* Catalog Request Dialog */}
+      <CatalogRequestDialog open={isCatalogDialogOpen} onOpenChange={setIsCatalogDialogOpen} />
 
     </div>
   );
