@@ -14,7 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, MapPin, Globe, Clock, ArrowRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight, Phone, Building2 } from "lucide-react";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 
 const formSchema = z.object({
@@ -88,12 +88,18 @@ export default function Contact() {
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
               <MapPin className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-lg font-display text-foreground mb-2">Headquarters</h3>
+              <h3 className="text-lg font-display text-foreground mb-2">India Headquarters</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 109, Nalanda Complex, nr. Mansi Complex<br />
                 Mahavir Nagar society, Vastrapur<br />
                 Ahmedabad, Gujarat 380015
               </p>
+              <div className="mt-3 pt-3 border-t border-border">
+                <Mail className="w-4 h-4 text-primary mb-2" />
+                <a href="mailto:info@mpc.technology" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                  info@mpc.technology
+                </a>
+              </div>
             </motion.div>
 
             <motion.div
@@ -103,11 +109,16 @@ export default function Contact() {
               transition={{ delay: 0.1 }}
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
-              <Mail className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-lg font-display text-foreground mb-2">Email</h3>
-              <a href="mailto:info@mpc.technology" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                info@mpc.technology
-              </a>
+              <Building2 className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-lg font-display text-foreground mb-2">Registered Office</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                15A Newcourt Street<br />
+                London, England, NW87AA<br />
+                United Kingdom
+              </p>
+              <p className="text-muted-foreground text-xs mt-2">
+                Company No. 07944346
+              </p>
             </motion.div>
 
             <motion.div
@@ -117,11 +128,31 @@ export default function Contact() {
               transition={{ delay: 0.2 }}
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
-              <Globe className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-lg font-display text-foreground mb-2">Website</h3>
-              <a href="https://prestilenergy.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                prestilenergy.com
-              </a>
+              <Building2 className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-lg font-display text-foreground mb-2">Manufacturing Factory</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                <span className="font-semibold text-foreground">PJSC "CHEMZ-IPEC"</span><br />
+                Ukraine, 61106, Kharkiv-DSP<br />
+                Industrialna St., 15A
+              </p>
+              <div className="space-y-2 pt-3 border-t border-border">
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-primary shrink-0" />
+                  <a href="tel:+380577525881" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    +38 (057) 752-58-81
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-primary shrink-0" />
+                  <a href="mailto:mail1.ipec@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    mail1.ipec@gmail.com
+                  </a>
+                </div>
+                <p className="text-xs text-muted-foreground mt-2">
+                  Mon-Fri: 08.00-16.30<br />
+                  Weekends: Sat-Sun
+                </p>
+              </div>
             </motion.div>
 
             <motion.div
@@ -131,11 +162,11 @@ export default function Contact() {
               transition={{ delay: 0.3 }}
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
-              <Clock className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-lg font-display text-foreground mb-2">Response Time</h3>
-              <p className="text-muted-foreground text-sm">
-                Within 24 hours<br />
-                Mon - Fri
+              <MapPin className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-lg font-display text-foreground mb-2">Find Us In Ukraine</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                26 Kosmichna Street, office 315<br />
+                Kharkiv, Ukraine
               </p>
             </motion.div>
           </div>
@@ -193,7 +224,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="bg-card border border-border p-8">
+              <div className="bg-card border border-border p-8 mb-8">
                 <h4 className="text-xl font-display text-foreground mb-4">
                   Certification<br />
                   <span className="text-primary">& Standards</span>
@@ -204,6 +235,45 @@ export default function Contact() {
                 <div className="flex gap-4">
                   <span className="px-3 py-1 bg-secondary border border-border text-xs text-muted-foreground">ISO 9001:2015</span>
                   <span className="px-3 py-1 bg-secondary border border-border text-xs text-muted-foreground">API Compliant</span>
+                </div>
+              </div>
+
+              <div className="bg-card border border-border p-8">
+                <h4 className="text-xl font-display text-foreground mb-6">
+                  Manufacturing<br />
+                  <span className="text-primary">Factory Unit</span>
+                </h4>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
+                    <div>
+                      <p className="text-foreground font-semibold mb-1">PJSC "CHEMZ-IPEC"</p>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        Ukraine, 61106, Kharkiv-DSP<br />
+                        Industrialna St., 15A
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <Phone className="w-5 h-5 text-primary shrink-0" />
+                    <a href="tel:+380577525881" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                      +38 (057) 752-58-81
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <Mail className="w-5 h-5 text-primary shrink-0" />
+                    <a href="mailto:mail1.ipec@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                      mail1.ipec@gmail.com
+                    </a>
+                  </div>
+                  <div className="pt-4 border-t border-border">
+                    <p className="text-xs text-muted-foreground mb-1">
+                      <span className="font-semibold text-foreground">Working days:</span> Monday - Friday, from 08.00 to 16.30
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      <span className="font-semibold text-foreground">Weekends:</span> Saturday, Sunday
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>
