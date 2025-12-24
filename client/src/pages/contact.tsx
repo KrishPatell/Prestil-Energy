@@ -88,17 +88,25 @@ export default function Contact() {
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
               <Globe className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-lg font-display text-foreground mb-2">India Headquarters</h3>
+              <h3 className="text-lg font-display text-foreground mb-2">Office In India</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 109, Nalanda Complex, nr. Mansi Complex<br />
                 Mahavir Nagar society, Vastrapur<br />
                 Ahmedabad, Gujarat 380015
               </p>
-              <div className="mt-3 pt-3 border-t border-border">
-                <Mail className="w-4 h-4 text-primary mb-2" />
-                <a href="mailto:info@mpc.technology" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                  info@mpc.technology
-                </a>
+              <div className="mt-3 pt-3 border-t border-border space-y-2">
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-primary shrink-0" />
+                  <a href="tel:+919824054002" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    +91 9824054002
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-primary shrink-0" />
+                  <a href="mailto:info@mpc.technology" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    info@mpc.technology
+                  </a>
+                </div>
               </div>
             </motion.div>
 
