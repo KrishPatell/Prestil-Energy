@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export function CTASection() {
   return (
     <section className="py-24 bg-primary relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/images/dark_cinematic_offshore_oil_rig_at_night_with_orange_lights.png')] bg-cover bg-center opacity-20" />
+      <div className="absolute inset-0 bg-[url('https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/Screenshot%202025-12-24%20at%203.01.28%E2%80%AFPM.png')] bg-cover bg-center opacity-20" />
       <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

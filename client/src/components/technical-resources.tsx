@@ -17,11 +17,11 @@ const resources = [
   {
     id: 2,
     title: "ISO Compliance Certificates",
-    description: "Certification documents demonstrating compliance with ISO standards for quality assurance.",
-    type: "PNG",
-    size: "2.3 MB",
+    description: "Combined PDF with all current ISO compliance certificates for Prestil Energy Ltd.",
+    type: "PDF",
+    size: "1.2 MB",
     icon: Award,
-    href: "https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/Screenshot%202025-12-23%20at%203.42.52%E2%80%AFPM.png",
+    href: "https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/certificates.pdf",
     download: true,
   },
 ];

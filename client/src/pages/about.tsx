@@ -88,7 +88,7 @@ export default function About() {
             >
               <div className="aspect-square bg-muted border border-border overflow-hidden">
                 <img 
-                  src={manufacturingImage} 
+                  src="https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/Screenshot%202025-12-24%20at%203.01.14%E2%80%AFPM.png" 
                   alt="Prestil Energy Manufacturing" 
                   className="w-full h-full object-cover"
                 />

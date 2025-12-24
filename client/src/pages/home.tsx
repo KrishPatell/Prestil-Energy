@@ -24,7 +24,7 @@ const heroSlides = [
     description: "Prestil Energy Ltd has been a manufacturer of submersible centrifugal pumps and submersible electric motors for oil and gas production, well services, and production enhancement applications since 1995.",
   },
   {
-    image: manufacturingImage,
+    image: "https://khemz-ipec.com.ua/bd/photoalbum/images/18-09-2013%20235.jpg",
     subtitle: "API Quality Products",
     titleLine1: "Manufacturer of submersible",
     titleLine2: "centrifugal pumps &",
@@ -265,7 +265,7 @@ export default function Home() {
             >
               <div className="aspect-[4/3] bg-card border border-border overflow-hidden">
                 <img 
-                  src={manufacturingImage} 
+                  src="https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/Screenshot%202025-12-24%20at%203.01.35%E2%80%AFPM.png" 
                   alt="Prestil Energy Manufacturing Facility" 
                   className="w-full h-full object-cover"
                 />
