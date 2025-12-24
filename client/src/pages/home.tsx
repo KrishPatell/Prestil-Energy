@@ -144,13 +144,13 @@ export default function Home() {
               </span>
             </motion.div>
 
-            <motion.h1 variants={fadeInUp} className="font-display font-normal text-white leading-[0.95] mb-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <motion.h1 variants={fadeInUp} className="font-display font-normal text-white leading-[0.95] mb-8 text-3xl md:text-5xl lg:text-6xl xl:text-7xl" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <span>{heroSlides[currentSlide].titleLine1}</span>
               <span className={heroSlides[currentSlide].titleLine3 ? "" : "text-primary"}>{heroSlides[currentSlide].titleLine2}</span>
               {heroSlides[currentSlide].titleLine3 && <span className="text-primary">{heroSlides[currentSlide].titleLine3}</span>}
             </motion.h1>
 
-            <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/70 mb-10 leading-relaxed" style={{ maxWidth: '750px' }}>
+            <motion.p variants={fadeInUp} className="text-base md:text-xl text-white/70 mb-10 leading-relaxed" style={{ maxWidth: '750px' }}>
               {heroSlides[currentSlide].description}
             </motion.p>
 
@@ -201,7 +201,7 @@ export default function Home() {
                   <item.icon className="w-6 h-6 text-primary" />
                   </div>
                 <div className="flex items-baseline justify-center gap-1 mb-2">
-                  <span className="text-4xl md:text-5xl font-display font-medium text-foreground">{item.value}</span>
+                  <span className="text-3xl md:text-5xl font-display font-medium text-foreground">{item.value}</span>
                   <span className="text-xl text-primary font-semibold">{item.unit}</span>
                     </div>
                 <p className="text-sm text-muted-foreground uppercase tracking-wider">{item.label}</p>
@@ -230,7 +230,7 @@ export default function Home() {
                 Engineering Excellence<br />
                 <span className="text-primary">Since 1995</span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">
                 Prestil Energy Ltd., established in 1995, specializes in the development and manufacturing of submersible equipment for the oil and gas industry. With strong in-house engineering capabilities and a fully integrated manufacturing process, we deliver reliable solutions to global operators.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
@@ -239,11 +239,11 @@ export default function Home() {
               
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="bg-card border border-border p-6">
-                  <span className="text-3xl font-display text-primary">ISO/API</span>
+                  <span className="text-2xl md:text-3xl font-display text-primary">ISO/API</span>
                   <p className="text-sm text-muted-foreground mt-2">Quality Standards</p>
                 </div>
                 <div className="bg-card border border-border p-6">
-                  <span className="text-3xl font-display text-primary">2.93 Ha</span>
+                  <span className="text-2xl md:text-3xl font-display text-primary">2.93 Ha</span>
                   <p className="text-sm text-muted-foreground mt-2">Manufacturing Site</p>
                 </div>
               </div>

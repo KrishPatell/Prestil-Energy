@@ -107,7 +107,7 @@ export default function Contact() {
                     <h1 className="page-hero-title mb-6 whitespace-nowrap">
                       Contact <span className="text-primary">Us</span>
                     </h1>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
               Our technical and commercial teams are ready to discuss your requirements, provide specifications, and support pilot projects.
             </p>
           </motion.div>
@@ -252,7 +252,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-foreground font-semibold mb-1">Pilot Projects</h4>
                     <p className="text-muted-foreground text-sm">Start with a trial deployment to validate performance in your conditions.</p>
-                  </div>
+                </div>
               </div>
             </div>
 

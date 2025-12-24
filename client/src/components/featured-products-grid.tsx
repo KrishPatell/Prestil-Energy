@@ -115,7 +115,7 @@ export function FeaturedProductsGrid() {
             Submersible Equipment<br />
             <span className="text-primary">For Oil Production</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base md:text-lg">
             Reliable, high-performance submersible pumps and motors engineered for demanding well conditions.
           </p>
         </motion.div>

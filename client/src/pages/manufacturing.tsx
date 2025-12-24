@@ -63,7 +63,7 @@ export default function Manufacturing() {
                       Manufacturing<br />
                       <span className="text-primary">Excellence</span>
                     </h1>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl">
               A fully integrated, ISO 9001:2015 certified manufacturing facility with closed-cycle production capabilities.
             </p>
           </motion.div>
@@ -116,7 +116,7 @@ export default function Manufacturing() {
                         Integrated Production<br />
                         <span className="text-primary">Facility</span>
                       </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">
                 Our manufacturing facility occupies 2.93 hectares, including 22,000 m² of production space. Equipped with more than 550 machine tools, dedicated test benches, and specialized production units, we maintain a closed manufacturing cycle for submersible equipment.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
@@ -160,7 +160,7 @@ export default function Manufacturing() {
                       Production<br />
                       <span className="text-primary">Workshops</span>
                     </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base md:text-lg">
               Complete in-house manufacturing capabilities from raw materials to finished products.
             </p>
           </motion.div>
@@ -300,7 +300,7 @@ export default function Manufacturing() {
                       Testing &<br />
                       <span className="text-primary">Validation</span>
                     </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base md:text-lg">
               Every unit undergoes comprehensive testing to ensure compliance with international standards.
             </p>
           </motion.div>

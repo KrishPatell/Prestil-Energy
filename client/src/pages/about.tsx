@@ -37,7 +37,7 @@ export default function About() {
             <h1 className="page-hero-title mb-6 text-primary">
               Prestil Energy Ltd.
             </h1>
-            <p className="text-muted-foreground text-lg leading-relaxed">
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
               A modern high-technology enterprise with over 25 years of experience manufacturing submersible equipment for the global oil & gas industry.
             </p>
           </motion.div>
@@ -58,7 +58,7 @@ export default function About() {
                 Company<br />
                 <span className="text-primary">Overview</span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">
                 Prestil Energy Ltd., established in 1995, specializes in the development and manufacturing of equipment for the oil and gas industry. The manufacturing facility was built on the basis of Kharkiv Electromechanical Plant, which had been manufacturing submersible electric motors for over half a century.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">

@@ -45,7 +45,7 @@ export function TechnicalResources() {
             Technical Resources<br />
             <span className="text-primary">& Downloads</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base md:text-lg">
             Access comprehensive technical documentation, product catalogs, and certification materials.
           </p>
         </motion.div>

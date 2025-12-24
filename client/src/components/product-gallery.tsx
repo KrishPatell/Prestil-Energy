@@ -158,7 +158,7 @@ export function ProductGallery() {
               <span className="text-primary">Solutions</span><br />
               Engineered To Perform
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mt-4">
+            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mt-4">
               Advanced submersible equipment crafted to enhance productivity and operational reliability in oil & gas production.
             </p>
           </div>

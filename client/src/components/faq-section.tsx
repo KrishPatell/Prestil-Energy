@@ -79,7 +79,7 @@ export function FAQSection() {
             Frequently Asked<br />
             <span className="text-primary">Questions</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base md:text-lg">
             Find answers to common questions about our products, services, and technical specifications.
           </p>
         </motion.div>
