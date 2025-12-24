@@ -15,13 +15,22 @@ import {
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, MapPin, ArrowRight, Phone, Globe, Flag, Factory } from "lucide-react";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
+
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqanbwl";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
   company: z.string().min(2, "Company is required"),
   email: z.string().email("Invalid email address"),
-  phone: z.string().optional(),
+  phone: z
+    .string()
+    .min(1, "Phone is required")
+    .refine((value) => isValidPhoneNumber(value || ""), {
+      message: "Enter a valid international phone number with country code (e.g. +1 555 000 0000)",
+    }),
   subject: z.string().min(2, "Subject is required"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
@@ -40,13 +49,41 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          Name: values.name,
+          Company: values.company,
+          Email: values.email,
+          Phone: values.phone,
+          Subject: values.subject,
+          Message: values.message,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error(`Formspree error: ${res.status}`);
+      }
+
     toast({
-      title: "Inquiry Received",
-      description: "Our technical team will review your request and respond within 24 hours.",
+        title: "Inquiry sent",
+        description: "Thank you. Our technical team will review your request and respond within 24 hours.",
     });
     form.reset();
+    } catch (error) {
+      console.error(error);
+      toast({
+        title: "Submission failed",
+        description: "There was a problem sending your request. Please try again or email us directly.",
+        variant: "destructive",
+      });
+    }
   }
 
   return (
@@ -70,7 +107,7 @@ export default function Contact() {
                     <h1 className="page-hero-title mb-6 whitespace-nowrap">
                       Contact <span className="text-primary">Us</span>
                     </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
               Our technical and commercial teams are ready to discuss your requirements, provide specifications, and support pilot projects.
             </p>
           </motion.div>
@@ -216,8 +253,8 @@ export default function Contact() {
                     <h4 className="text-foreground font-semibold mb-1">Pilot Projects</h4>
                     <p className="text-muted-foreground text-sm">Start with a trial deployment to validate performance in your conditions.</p>
                   </div>
-                </div>
               </div>
+            </div>
 
               <div className="bg-card border border-border p-8 mb-8">
                 <h4 className="text-xl font-display text-foreground mb-4">
@@ -230,47 +267,8 @@ export default function Contact() {
                 <div className="flex gap-4">
                   <span className="px-3 py-1 bg-secondary border border-border text-xs text-muted-foreground">ISO 9001:2015</span>
                   <span className="px-3 py-1 bg-secondary border border-border text-xs text-muted-foreground">API Compliant</span>
-              </div>
-            </div>
-
-              <div className="bg-card border border-border p-8">
-                <h4 className="text-xl font-display text-foreground mb-6">
-                  Manufacturing<br />
-                  <span className="text-primary">Factory Unit</span>
-                </h4>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
-                    <div>
-                      <p className="text-foreground font-semibold mb-1">PJSC "CHEMZ-IPEC"</p>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        Ukraine, 61106, Kharkiv-DSP<br />
-                        Industrialna St., 15A
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <Phone className="w-5 h-5 text-primary shrink-0" />
-                    <a href="tel:+380577525881" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                      +38 (057) 752-58-81
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <Mail className="w-5 h-5 text-primary shrink-0" />
-                    <a href="mailto:mail1.ipec@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                      mail1.ipec@gmail.com
-                    </a>
-                  </div>
-                  <div className="pt-4 border-t border-border">
-                    <p className="text-xs text-muted-foreground mb-1">
-                      <span className="font-semibold text-foreground">Working days:</span> Monday - Friday, from 08.00 to 16.30
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      <span className="font-semibold text-foreground">Weekends:</span> Saturday, Sunday
-              </p>
             </div>
           </div>
-              </div>
             </motion.div>
 
             {/* Right Column - Form */}
@@ -348,13 +346,18 @@ export default function Contact() {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                          <FormLabel className="text-foreground text-xs uppercase tracking-wider">Phone</FormLabel>
+                        <FormLabel className="text-foreground text-xs uppercase tracking-wider">
+                          Phone *
+                        </FormLabel>
                         <FormControl>
-                            <Input 
-                              placeholder="+1 (555) 000-0000" 
-                              {...field} 
-                              className="bg-background border-border text-foreground h-12 focus-visible:ring-primary placeholder:text-muted-foreground" 
-                            />
+                          <PhoneInput
+                            international
+                            defaultCountry="IN"
+                            value={field.value}
+                            onChange={field.onChange}
+                            placeholder="+1 555 000 0000 (include country code)"
+                            className="bg-background border border-border text-foreground h-12 w-full rounded-sm px-3 flex items-center focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary placeholder:text-muted-foreground"
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

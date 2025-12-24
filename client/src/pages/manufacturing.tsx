@@ -63,7 +63,7 @@ export default function Manufacturing() {
                       Manufacturing<br />
                       <span className="text-primary">Excellence</span>
                     </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
               A fully integrated, ISO 9001:2015 certified manufacturing facility with closed-cycle production capabilities.
             </p>
           </motion.div>

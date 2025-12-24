@@ -565,7 +565,7 @@ export default function Products() {
                       Submersible<br />
                       <span className="text-primary">Equipment</span>
                     </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
               High-performance submersible pumps, electric motors, and integrated ESP solutions for oil & gas production.
             </p>
           </motion.div>

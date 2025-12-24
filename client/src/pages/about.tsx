@@ -34,10 +34,10 @@ export default function About() {
               <div className="h-px w-12 bg-primary" />
               <span className="text-primary text-sm font-semibold tracking-widest uppercase">About Us</span>
             </div>
-                    <h1 className="page-hero-title mb-6 whitespace-nowrap">
-                      Prestil Energy <span className="text-primary">Ltd.</span>
-                    </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
+            <h1 className="page-hero-title mb-6 text-primary">
+              Prestil Energy Ltd.
+            </h1>
+            <p className="text-muted-foreground text-lg leading-relaxed">
               A modern high-technology enterprise with over 25 years of experience manufacturing submersible equipment for the global oil & gas industry.
             </p>
           </motion.div>
@@ -54,10 +54,10 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-                      <h2 className="section-title mb-8">
-                        Company<br />
-                        <span className="text-primary">Overview</span>
-                      </h2>
+              <h2 className="section-title mb-8">
+                Company<br />
+                <span className="text-primary">Overview</span>
+              </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                 Prestil Energy Ltd., established in 1995, specializes in the development and manufacturing of equipment for the oil and gas industry. The manufacturing facility was built on the basis of Kharkiv Electromechanical Plant, which had been manufacturing submersible electric motors for over half a century.
               </p>
@@ -141,31 +141,7 @@ export default function About() {
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-12 bg-card border border-border p-8"
-          >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <span className="block text-3xl font-display text-primary mb-2">550+</span>
-                <span className="text-sm text-muted-foreground">Machine Tools</span>
-              </div>
-              <div>
-                <span className="block text-3xl font-display text-primary mb-2">3,000</span>
-                <span className="text-sm text-muted-foreground">Motors/Year Capacity</span>
-              </div>
-              <div>
-                <span className="block text-3xl font-display text-primary mb-2">50+</span>
-                <span className="text-sm text-muted-foreground">Testing Stations</span>
-              </div>
-              <div>
-                <span className="block text-3xl font-display text-primary mb-2">25+</span>
-                <span className="text-sm text-muted-foreground">Years Experience</span>
-              </div>
-            </div>
-          </motion.div>
+          
         </div>
       </section>
 
