@@ -73,7 +73,7 @@ export function CaseStudies() {
             Case Studies<br />
             <span className="text-primary">& Results</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base md:text-lg">
             Real-world deployments demonstrating the performance and reliability of Prestil Energy equipment.
           </p>
         </motion.div>

@@ -76,7 +76,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-base font-medium tracking-wide transition-colors hover:text-primary ${
+              className={`text-sm font-medium tracking-wide transition-colors hover:text-primary ${
                 location === item.href ? "text-primary" : "text-foreground/80"
               }`}
             >
