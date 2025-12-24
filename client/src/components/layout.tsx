@@ -252,6 +252,16 @@ export function Footer() {
                   info@mpc.technology
                 </a>
               </li>
+              <li className="flex items-start gap-3 mt-4 pt-4 border-t border-border">
+                <MapPin className="w-4 h-4 text-primary mt-1 shrink-0" />
+                <div>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Registered Office</p>
+                  <p className="text-sm text-muted-foreground">
+                    15A Newcourt Street, London, England, NW87AA<br />
+                    United Kingdom Company No. 07944346
+                  </p>
+                </div>
+              </li>
             </ul>
             
             <div className="mt-6 pt-6 border-t border-border">
