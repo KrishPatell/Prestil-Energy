@@ -90,7 +90,7 @@ export default function Contact() {
               <Globe className="w-8 h-8 text-primary mb-4" />
               <h3 className="text-lg font-display text-foreground mb-2">Office In India</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                109, Nalanda Complex, nr. Mansi Complex<br />
+                109/A, Nalanda Complex, NR Mansi Complex<br />
                 Mahavir Nagar society, Vastrapur<br />
                 Ahmedabad, Gujarat 380015
               </p>
@@ -103,8 +103,14 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-primary shrink-0" />
-                  <a href="mailto:info@mpc.technology" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                    info@mpc.technology
+                  <a href="mailto:energy.apatel@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    energy.apatel@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-primary shrink-0" />
+                  <a href="mailto:prestilindia@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    prestilindia@gmail.com
                   </a>
                 </div>
               </div>
@@ -118,13 +124,13 @@ export default function Contact() {
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
               <Flag className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-lg font-display text-foreground mb-2">Registered Office</h3>
+              <h3 className="text-lg font-display text-foreground mb-2">Registered Office in UK</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 15A Newcourt Street<br />
                 London, England, NW87AA<br />
                 United Kingdom
               </p>
-              <p className="text-muted-foreground text-xs mt-2">
+              <p className="text-muted-foreground text-sm mt-2">
                 Company No. 07944346
               </p>
             </motion.div>
@@ -137,30 +143,11 @@ export default function Contact() {
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
               <Factory className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-lg font-display text-foreground mb-2">Manufacturing Factory</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
-                <span className="font-semibold text-foreground">PJSC "CHEMZ-IPEC"</span><br />
-                Ukraine, 61106, Kharkiv-DSP<br />
-                Industrialna St., 15A
+              <h3 className="text-lg font-display text-foreground mb-2">Manufacturing Factory in Ukraine</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                15A, Industrialna St<br />
+                Kharkiv-DSP, Ukraine, 61106
               </p>
-              <div className="space-y-2 pt-3 border-t border-border">
-                <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-primary shrink-0" />
-                  <a href="tel:+380577525881" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                    +38 (057) 752-58-81
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="w-4 h-4 text-primary shrink-0" />
-                  <a href="mailto:mail1.ipec@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                    mail1.ipec@gmail.com
-                  </a>
-                </div>
-                <p className="text-xs text-muted-foreground mt-2">
-                  Mon-Fri: 08.00-16.30<br />
-                  Weekends: Sat-Sun
-                </p>
-              </div>
             </motion.div>
 
             <motion.div
@@ -171,20 +158,20 @@ export default function Contact() {
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
               <MapPin className="w-8 h-8 text-primary mb-4" />
-              <h3 className="text-lg font-display text-foreground mb-2">Find Us In Ukraine</h3>
+              <h3 className="text-lg font-display text-foreground mb-2">Registered Office in Ukraine</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 26 Kosmichna Street, office 315<br />
                 Kharkiv, Ukraine
               </p>
             </motion.div>
-          </div>
         </div>
+      </div>
       </section>
 
       {/* Contact Form Section */}
       <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             {/* Left Column - Info */}
             <motion.div
@@ -205,17 +192,17 @@ export default function Contact() {
                   <div className="w-10 h-10 bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
                     <span className="text-primary font-semibold">01</span>
                   </div>
-                  <div>
+            <div>
                     <h4 className="text-foreground font-semibold mb-1">Technical Consultations</h4>
                     <p className="text-muted-foreground text-sm">Equipment selection based on your well conditions and requirements.</p>
-                  </div>
-                </div>
+              </div>
+            </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
                     <span className="text-primary font-semibold">02</span>
                   </div>
-                  <div>
+            <div>
                     <h4 className="text-foreground font-semibold mb-1">Quotations & Proposals</h4>
                     <p className="text-muted-foreground text-sm">Detailed pricing and delivery timelines for your specific needs.</p>
                   </div>
@@ -238,13 +225,13 @@ export default function Contact() {
                   <span className="text-primary">& Standards</span>
                 </h4>
                 <p className="text-muted-foreground text-sm mb-4">
-                  All equipment is manufactured under ISO 9001:2015 quality management and complies with API and ISO standards.
+                  All equipment is manufactured under ISO 9001:2015 quality management and designed to API quality standards.
                 </p>
                 <div className="flex gap-4">
                   <span className="px-3 py-1 bg-secondary border border-border text-xs text-muted-foreground">ISO 9001:2015</span>
                   <span className="px-3 py-1 bg-secondary border border-border text-xs text-muted-foreground">API Compliant</span>
-                </div>
               </div>
+            </div>
 
               <div className="bg-card border border-border p-8">
                 <h4 className="text-xl font-display text-foreground mb-6">
@@ -280,9 +267,9 @@ export default function Contact() {
                     </p>
                     <p className="text-xs text-muted-foreground">
                       <span className="font-semibold text-foreground">Weekends:</span> Saturday, Sunday
-                    </p>
-                  </div>
-                </div>
+              </p>
+            </div>
+          </div>
               </div>
             </motion.div>
 
@@ -299,14 +286,14 @@ export default function Contact() {
                 <span className="text-primary">Message</span>
               </h3>
 
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="name"
-                      render={({ field }) => (
-                        <FormItem>
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
                           <FormLabel className="text-foreground text-xs uppercase tracking-wider">Full Name *</FormLabel>
                           <FormControl>
                             <Input 
@@ -325,101 +312,101 @@ export default function Contact() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel className="text-foreground text-xs uppercase tracking-wider">Company *</FormLabel>
-                          <FormControl>
+                      <FormControl>
                             <Input 
                               placeholder="Company Name" 
                               {...field} 
                               className="bg-background border-border text-foreground h-12 focus-visible:ring-primary placeholder:text-muted-foreground" 
                             />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
                   </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
                           <FormLabel className="text-foreground text-xs uppercase tracking-wider">Email *</FormLabel>
-                          <FormControl>
+                        <FormControl>
                             <Input 
                               placeholder="john@company.com" 
                               {...field} 
                               className="bg-background border-border text-foreground h-12 focus-visible:ring-primary placeholder:text-muted-foreground" 
                             />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="phone"
-                      render={({ field }) => (
-                        <FormItem>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem>
                           <FormLabel className="text-foreground text-xs uppercase tracking-wider">Phone</FormLabel>
-                          <FormControl>
+                        <FormControl>
                             <Input 
                               placeholder="+1 (555) 000-0000" 
                               {...field} 
                               className="bg-background border-border text-foreground h-12 focus-visible:ring-primary placeholder:text-muted-foreground" 
                             />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
 
-                  <FormField
-                    control={form.control}
+                <FormField
+                  control={form.control}
                     name="subject"
-                    render={({ field }) => (
-                      <FormItem>
+                  render={({ field }) => (
+                    <FormItem>
                         <FormLabel className="text-foreground text-xs uppercase tracking-wider">Subject *</FormLabel>
-                        <FormControl>
+                      <FormControl>
                           <Input 
                             placeholder="Product Inquiry / Quote Request / Technical Support" 
                             {...field} 
                             className="bg-background border-border text-foreground h-12 focus-visible:ring-primary placeholder:text-muted-foreground" 
                           />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
                         <FormLabel className="text-foreground text-xs uppercase tracking-wider">Message *</FormLabel>
-                        <FormControl>
+                      <FormControl>
                           <Textarea 
                             placeholder="Please describe your requirements, including well conditions, capacity needs, or any specific questions..." 
                             {...field} 
                             className="bg-background border-border text-foreground min-h-[150px] focus-visible:ring-primary placeholder:text-muted-foreground resize-none" 
                           />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
                   <Button 
                     type="submit" 
                     className="w-full bg-primary hover:bg-primary/90 text-white font-semibold h-14 text-sm group"
                   >
-                    Submit Inquiry
+                  Submit Inquiry
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </form>
-              </Form>
+                </Button>
+              </form>
+            </Form>
             </motion.div>
           </div>
         </div>
@@ -444,8 +431,8 @@ export default function Contact() {
             <Button className="bg-primary hover:bg-primary/90 text-white font-semibold h-12 px-8">
               Request Catalogue
             </Button>
-          </div>
         </div>
+      </div>
       </section>
 
     </div>

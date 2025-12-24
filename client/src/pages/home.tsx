@@ -17,16 +17,18 @@ const manufacturingImage = "/images/high-tech_manufacturing_facility_interior.pn
 const heroSlides = [
   {
     image: heroImage,
-    subtitle: "Prestil Energy Ltd.",
+    subtitle: "ISO 9001:2015 Certified",
     titleLine1: "Submersible Equipment",
     titleLine2: "for Oil & Gas Production",
+    titleLine3: "",
     description: "Prestil Energy Ltd has been a manufacturer of submersible centrifugal pumps and submersible electric motors for oil and gas production, well services, and production enhancement applications since 1995.",
   },
   {
     image: manufacturingImage,
-    subtitle: "ISO 9001:2015 Certified",
-    titleLine1: "Integrated Manufacturing",
-    titleLine2: "Excellence",
+    subtitle: "API Quality Products",
+    titleLine1: "Manufacturer of submersible",
+    titleLine2: "centrifugal pumps &",
+    titleLine3: "submersible electric motors.",
     description: "State-of-the-art 22,000 m² production facility with capacity for 3,000 electric motors annually.",
   },
 ];
@@ -65,8 +67,8 @@ const capabilities = [
 const features = [
   {
     icon: Shield,
-    title: "API & ISO\nCompliant",
-    description: "All equipment manufactured under strict API and ISO standards with full quality traceability.",
+    title: "ISO Certified\n& API Quality",
+    description: "All equipment manufactured under ISO 9001:2015 certification and designed to API quality standards with full quality traceability.",
   },
   {
     icon: Zap,
@@ -133,7 +135,7 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
-            style={{ maxWidth: '1200px' }}
+            style={{ maxWidth: '1380px' }}
           >
             <motion.div variants={fadeInUp} className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-primary" />
@@ -142,12 +144,13 @@ export default function Home() {
               </span>
             </motion.div>
 
-            <motion.h1 variants={fadeInUp} className="font-display font-normal text-white leading-[0.95] mb-8" style={{ fontSize: '85px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <motion.h1 variants={fadeInUp} className="font-display font-normal text-white leading-[0.95] mb-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <span>{heroSlides[currentSlide].titleLine1}</span>
-              <span className="text-primary">{heroSlides[currentSlide].titleLine2}</span>
+              <span className={heroSlides[currentSlide].titleLine3 ? "" : "text-primary"}>{heroSlides[currentSlide].titleLine2}</span>
+              {heroSlides[currentSlide].titleLine3 && <span className="text-primary">{heroSlides[currentSlide].titleLine3}</span>}
             </motion.h1>
 
-            <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/70 max-w-xl mb-10 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/70 mb-10 leading-relaxed" style={{ maxWidth: '750px' }}>
               {heroSlides[currentSlide].description}
             </motion.p>
 
@@ -236,8 +239,8 @@ export default function Home() {
               
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="bg-card border border-border p-6">
-                  <span className="text-3xl font-display text-primary">API/ISO</span>
-                  <p className="text-sm text-muted-foreground mt-2">Standards Compliant</p>
+                  <span className="text-3xl font-display text-primary">ISO/API</span>
+                  <p className="text-sm text-muted-foreground mt-2">Quality Standards</p>
                 </div>
                 <div className="bg-card border border-border p-6">
                   <span className="text-3xl font-display text-primary">2.93 Ha</span>
@@ -340,7 +343,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-end">
-                {["Ukraine", "Romania", "Lithuania", "USA"].map((country, i) => (
+                {["Ukraine", "Romania", "Lithuania", "India", "USA"].map((country, i) => (
                   <div key={i} className="flex items-center gap-2 px-4 py-2 bg-secondary border border-border">
                     <CheckCircle2 className="w-4 h-4 text-primary" />
                     <span className="text-sm text-foreground">{country}</span>

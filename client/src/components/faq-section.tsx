@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ReactNode } from "react";
 
 const faqs = [
   {
@@ -27,7 +28,7 @@ const faqs = [
   {
     id: 4,
     question: "What certifications do your products have?",
-    answer: "All equipment is manufactured under ISO 9001:2015 quality management certification and complies with API and ISO standards. We maintain full traceability and quality control throughout the manufacturing process.",
+    answer: "All equipment is manufactured under ISO 9001:2015 quality management certification and designed to API quality standards. We maintain full traceability and quality control throughout the manufacturing process.",
   },
   {
     id: 5,
@@ -47,7 +48,15 @@ const faqs = [
   {
     id: 8,
     question: "How do I request a quote or technical consultation?",
-    answer: "You can request a quote or technical consultation through our contact form, email (info@mpc.technology), or by contacting our sales team directly. We typically respond within 24 hours and can provide detailed specifications, pricing, and delivery timelines based on your requirements.",
+    answer: (
+      <>
+        You can request a quote or technical consultation through our contact form, email (
+        <a href="mailto:energy.apatel@gmail.com" className="text-primary hover:underline">
+          energy.apatel@gmail.com
+        </a>
+        ), or by contacting our sales team directly. We typically respond within 24 hours and can provide detailed specifications, pricing, and delivery timelines based on your requirements.
+      </>
+    ),
   },
 ];
 
@@ -93,7 +102,7 @@ export function FAQSection() {
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                    {faq.answer}
+                    {typeof faq.answer === 'string' ? faq.answer : faq.answer}
                   </AccordionContent>
                 </AccordionItem>
               </motion.div>

@@ -16,8 +16,8 @@ const resources = [
   },
   {
     id: 2,
-    title: "API/ISO Compliance Certificates",
-    description: "Certification documents demonstrating compliance with API and ISO standards for quality assurance.",
+    title: "ISO Compliance Certificates",
+    description: "Certification documents demonstrating compliance with ISO standards for quality assurance.",
     type: "PNG",
     size: "2.3 MB",
     icon: Award,
