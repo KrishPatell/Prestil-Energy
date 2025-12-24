@@ -14,7 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, MapPin, ArrowRight, Phone, Building2 } from "lucide-react";
+import { Mail, MapPin, ArrowRight, Phone, Globe, Flag, Factory } from "lucide-react";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 
 const formSchema = z.object({
@@ -87,7 +87,7 @@ export default function Contact() {
               viewport={{ once: true }}
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
-              <MapPin className="w-8 h-8 text-primary mb-4" />
+              <Globe className="w-8 h-8 text-primary mb-4" />
               <h3 className="text-lg font-display text-foreground mb-2">India Headquarters</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 109, Nalanda Complex, nr. Mansi Complex<br />
@@ -109,7 +109,7 @@ export default function Contact() {
               transition={{ delay: 0.1 }}
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
-              <Building2 className="w-8 h-8 text-primary mb-4" />
+              <Flag className="w-8 h-8 text-primary mb-4" />
               <h3 className="text-lg font-display text-foreground mb-2">Registered Office</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 15A Newcourt Street<br />
@@ -128,7 +128,7 @@ export default function Contact() {
               transition={{ delay: 0.2 }}
               className="bg-background border border-border p-6 group hover:border-primary/30 transition-colors"
             >
-              <Building2 className="w-8 h-8 text-primary mb-4" />
+              <Factory className="w-8 h-8 text-primary mb-4" />
               <h3 className="text-lg font-display text-foreground mb-2">Manufacturing Factory</h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-3">
                 <span className="font-semibold text-foreground">PJSC "CHEMZ-IPEC"</span><br />
