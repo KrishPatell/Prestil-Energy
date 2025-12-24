@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 import { CTASection } from "@/components/cta-section";
 import { TechnicalResources } from "@/components/technical-resources";
+import { CatalogRequestDialog } from "@/components/catalog-request-dialog";
 
 // Real product images from KHEMZ-IPEC
 const pumpImage = "/images/products/centrifugal-pump-25-1.png";
@@ -538,6 +539,7 @@ const pumpRangeData = [
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState("all");
+  const [isCatalogDialogOpen, setIsCatalogDialogOpen] = useState(false);
 
   const filteredProducts = activeCategory === "all" 
     ? products 
@@ -733,12 +735,13 @@ export default function Products() {
             <p className="text-muted-foreground text-sm mb-6">
               Extended ranges and custom configurations available on request.
             </p>
-            <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-white">
-                <Download className="mr-2 w-4 h-4" />
-                Request Full Catalogue
-              </Button>
-            </Link>
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-white"
+              onClick={() => setIsCatalogDialogOpen(true)}
+            >
+              <Download className="mr-2 w-4 h-4" />
+              Request Full Catalogue
+            </Button>
           </motion.div>
         </div>
       </section>
@@ -836,6 +839,9 @@ export default function Products() {
 
       {/* CTA Section */}
       <CTASection />
+
+      {/* Catalog Request Dialog */}
+      <CatalogRequestDialog open={isCatalogDialogOpen} onOpenChange={setIsCatalogDialogOpen} />
 
     </div>
   );

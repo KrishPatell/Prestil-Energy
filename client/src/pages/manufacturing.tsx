@@ -83,7 +83,7 @@ export default function Manufacturing() {
             >
               <div className="aspect-[4/3] bg-muted border border-border overflow-hidden">
                 <img 
-                  src={manufacturingImage} 
+                  src="https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/Gemini_Generated_Image_ach3uuach3uuach3%201.webp" 
                   alt="Prestil Energy Manufacturing Facility" 
                   className="w-full h-full object-cover"
                 />
