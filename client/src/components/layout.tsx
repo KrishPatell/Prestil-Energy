@@ -76,7 +76,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm font-medium tracking-wide transition-colors hover:text-primary ${
+              className={`text-base font-medium tracking-wide transition-colors hover:text-primary ${
                 location === item.href ? "text-primary" : "text-foreground/80"
               }`}
             >
@@ -241,15 +241,27 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-1 shrink-0" />
                 <span className="text-muted-foreground">
-                  109, Nalanda Complex, nr. Mansi Complex<br />
+                  109/A, Nalanda Complex, NR Mansi Complex<br />
                   Mahavir Nagar society, Vastrapur<br />
                   Ahmedabad, Gujarat 380015
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary shrink-0" />
-                <a href="mailto:info@mpc.technology" className="text-muted-foreground hover:text-primary transition-colors">
-                  info@mpc.technology
+                <a href="mailto:energy.apatel@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  energy.apatel@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-primary shrink-0" />
+                <a href="mailto:prestilindia@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  prestilindia@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-primary shrink-0" />
+                <a href="tel:+919824054002" className="text-muted-foreground hover:text-primary transition-colors">
+                  +91 9824054002
                 </a>
               </li>
               <li className="flex items-start gap-3 mt-4 pt-4 border-t border-border">
@@ -275,10 +287,10 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-border">
         <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Prestil Energy Ltd. All rights reserved.
           </p>
-          <div className="flex gap-6 text-xs text-muted-foreground">
+          <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
           </div>

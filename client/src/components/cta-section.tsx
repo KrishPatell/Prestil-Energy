@@ -26,11 +26,16 @@ export function CTASection() {
                 Request A Quote
               </Button>
             </Link>
-            <Link href="/products">
+            <a 
+              href="https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/Catalogue%20-%20Submersible%20Equipment%20for%20Oil%20Production.pdf"
+              download="Catalogue - Submersible Equipment for Oil Production.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-14 px-10 text-sm rounded-sm">
                 Download Catalogue
               </Button>
-            </Link>
+            </a>
           </div>
         </motion.div>
       </div>
