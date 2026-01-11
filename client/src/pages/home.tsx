@@ -401,5 +401,6 @@ export default function Home() {
       <CTASection />
 
     </div>
+    </>
   );
 }

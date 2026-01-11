@@ -157,5 +157,6 @@ export function BlogLayout({
         <BlogContactForm />
       </div>
     </div>
+    </>
   );
 }

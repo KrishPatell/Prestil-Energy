@@ -17,7 +17,7 @@ const dosingPumpImage = "/images/products/dosing-pump-dnp-2500-10.png";
 
 const productCategories = [
   { id: "all", label: "All Products" },
-  { id: "pumps", label: "Centrifugal Pumps" },
+  { id: "pumps", label: "ESP Pumps" },
   { id: "motors", label: "Electric Motors" },
   { id: "gas-separators", label: "Gas Separators" },
   { id: "dosing-pumps", label: "Dosing Pumps" },
@@ -29,9 +29,9 @@ const products = [
   {
     id: 1,
     category: "pumps",
-    title: "Submersible\nCentrifugal Pump 25 m³/day",
+    title: "Submersible\nESP Pump 25 m³/day",
     subtitle: "Ø92mm Series",
-    description: "Multistage submersible centrifugal pump with rated delivery of 25 m³/day for efficient lifting of formation fluid from oil wells.",
+    description: "Multistage submersible ESP pump with rated delivery of 25 m³/day for efficient lifting of formation fluid from oil wells.",
     image: "/images/products/centrifugal-pump-25-1.png",
     specs: [
       { label: "Housing Diameter", value: "92 mm" },
@@ -49,9 +49,9 @@ const products = [
   {
     id: 13,
     category: "pumps",
-    title: "Submersible\nCentrifugal Pump 30 m³/day",
+    title: "Submersible\nESP Pump 30 m³/day",
     subtitle: "Ø92mm Series",
-    description: "Multistage submersible centrifugal pump with rated delivery of 30 m³/day for efficient oil lifting applications.",
+    description: "Multistage submersible ESP pump with rated delivery of 30 m³/day for efficient oil lifting applications.",
     image: "/images/products/centrifugal-pump-30-1.png",
     specs: [
       { label: "Housing Diameter", value: "92 mm" },
@@ -69,9 +69,9 @@ const products = [
   {
     id: 14,
     category: "pumps",
-    title: "Submersible\nCentrifugal Pump 50 m³/day",
+    title: "Submersible\nESP Pump 50 m³/day",
     subtitle: "Ø92mm Series",
-    description: "Multistage submersible centrifugal pump with rated delivery of 50 m³/day for high-capacity oil production.",
+    description: "Multistage submersible ESP pump with rated delivery of 50 m³/day for high-capacity oil production.",
     image: "/images/products/centrifugal-pump-50-1.png",
     specs: [
       { label: "Housing Diameter", value: "92 mm" },
@@ -89,9 +89,9 @@ const products = [
   {
     id: 15,
     category: "pumps",
-    title: "Submersible\nCentrifugal Pump 80 m³/day",
+    title: "Submersible\nESP Pump 80 m³/day",
     subtitle: "Ø92mm Series",
-    description: "Multistage submersible centrifugal pump with rated delivery of 80 m³/day for demanding production applications.",
+    description: "Multistage submersible ESP pump with rated delivery of 80 m³/day for demanding production applications.",
     image: "/images/products/centrifugal-pump-80-1.png",
     specs: [
       { label: "Housing Diameter", value: "92 mm" },
@@ -109,9 +109,9 @@ const products = [
   {
     id: 16,
     category: "pumps",
-    title: "Submersible\nCentrifugal Pump 125 m³/day",
+    title: "Submersible\nESP Pump 125 m³/day",
     subtitle: "Ø92mm Series",
-    description: "Multistage submersible centrifugal pump with rated delivery of 125 m³/day for high-volume production wells.",
+    description: "Multistage submersible ESP pump with rated delivery of 125 m³/day for high-volume production wells.",
     image: "/images/products/centrifugal-pump-125-1.png",
     specs: [
       { label: "Housing Diameter", value: "92 mm" },
@@ -129,9 +129,9 @@ const products = [
   {
     id: 17,
     category: "pumps",
-    title: "Submersible\nCentrifugal Pump 200 m³/day",
+    title: "Submersible\nESP Pump 200 m³/day",
     subtitle: "Ø92mm Series",
-    description: "Multistage submersible centrifugal pump with rated delivery of 200 m³/day for maximum production applications.",
+    description: "Multistage submersible ESP pump with rated delivery of 200 m³/day for maximum production applications.",
     image: "/images/products/centrifugal-pump-200-1.png",
     specs: [
       { label: "Housing Diameter", value: "92 mm" },
@@ -682,7 +682,7 @@ export default function Products() {
               <div className="h-px w-12 bg-primary" />
             </div>
                     <h2 className="section-title mb-4">
-                      Centrifugal Pump<br />
+                      ESP Pump<br />
                       <span className="text-primary">Range</span>
                     </h2>
             <p className="text-muted-foreground">
