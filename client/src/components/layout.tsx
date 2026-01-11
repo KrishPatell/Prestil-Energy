@@ -221,6 +221,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  Blog
+                  <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
                   Contact
                   <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
