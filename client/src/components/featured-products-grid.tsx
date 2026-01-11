@@ -33,23 +33,7 @@ const featuredProducts = [
       "Application": "Oil & Gas Wells",
       "Standard": "API/ISO"
     }
-  },
-  {
-    id: 3,
-    title: "Hermetic Dosing Plunger Pump Units",
-    subtitle: "DNP Series",
-    description: "Hermetic dosing plunger pump units for precise metering of chemicals and additives in oil & gas production applications.",
-    image: "/images/products/dosing-pump-dnp-2500-10.png",
-    category: "dosing-pumps",
-    href: "/products#dosing-pumps",
-    specs: {
-      "Power": "3.0 - 4.0 kW",
-      "Design": "Hermetic",
-      "Type": "Plunger Pump",
-      "Applications": "Chemical Injection"
-    }
-  },
-  {
+  },{
     id: 4,
     title: "Hydroprotection (Protectors)",
     subtitle: "Motor Protection",
