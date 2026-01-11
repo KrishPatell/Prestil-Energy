@@ -18,9 +18,9 @@ const manufacturingImage = "/images/high-tech_manufacturing_facility_interior.pn
 const heroSlides = [
   {
     image: heroImage,
-    subtitle: "Industry-Leading Centrifugal Pump & SRP Solutions",
-    titleLine1: "Manufacturer of Sucker Rod Pumps (SRP) &",
-    titleLine2: "Centrifugal Pumps",
+      subtitle: "Industry-Leading ESP & SRP Solutions",
+      titleLine1: "Manufacturer of Sucker Rod Pumps (SRP) &",
+      titleLine2: "Electric Submersible Pump (ESP)",
     titleLine3: "",
     description: "Delivering precision-engineered submersible pumps and electric motors for optimal oil and gas production. ISO 9001:2015 certified manufacturing with proven performance across global markets since 1995.",
   },
