@@ -21,7 +21,12 @@ import "react-phone-number-input/style.css";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 import { CatalogRequestDialog } from "@/components/catalog-request-dialog";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqanbwl";
+// Backend API endpoint - sends emails to all 4 recipients:
+// 1. energy.apatel@gmail.com
+// 2. prestilindia@gmail.com
+// 3. abhi9824054002@yahoo.com
+// 4. abhi9824054002@gmail.com
+const CONTACT_API_ENDPOINT = "/api/contact";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -54,7 +59,7 @@ export default function Contact() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
+      const res = await fetch(CONTACT_API_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,23 +72,26 @@ export default function Contact() {
           Phone: values.phone,
           Subject: values.subject,
           Message: values.message,
+          source: "Contact Page",
         }),
       });
 
-      if (!res.ok) {
-        throw new Error(`Formspree error: ${res.status}`);
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.message || `Server error: ${res.status}`);
       }
 
       toast({
         title: "Inquiry sent",
-        description: "Thank you. Our technical team will review your request and respond within 24 hours.",
+        description: data.message || "Thank you. Our technical team will review your request and respond within 24 hours.",
       });
       form.reset();
     } catch (error) {
-      console.error(error);
+      console.error("Form submission error:", error);
       toast({
         title: "Submission failed",
-        description: "There was a problem sending your request. Please try again or email us directly.",
+        description: error instanceof Error ? error.message : "There was a problem sending your request. Please try again or email us directly.",
         variant: "destructive",
       });
     }
@@ -151,12 +159,6 @@ export default function Contact() {
                   <Mail className="w-4 h-4 text-primary shrink-0" />
                   <a href="mailto:prestilindia@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
                     prestilindia@gmail.com
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="w-4 h-4 text-primary shrink-0" />
-                  <a href="mailto:hi@kpatel.xyz" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                    hi@kpatel.xyz
                   </a>
                 </div>
               </div>

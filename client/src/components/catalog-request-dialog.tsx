@@ -25,7 +25,12 @@ import { ArrowRight } from "lucide-react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqanbwl";
+// Backend API endpoint - sends emails to all 4 recipients:
+// 1. energy.apatel@gmail.com
+// 2. prestilindia@gmail.com
+// 3. abhi9824054002@yahoo.com
+// 4. abhi9824054002@gmail.com
+const CONTACT_API_ENDPOINT = "/api/contact";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -62,7 +67,7 @@ export function CatalogRequestDialog({ open, onOpenChange }: CatalogRequestDialo
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
+      const res = await fetch(CONTACT_API_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -75,16 +80,19 @@ export function CatalogRequestDialog({ open, onOpenChange }: CatalogRequestDialo
           Phone: values.phone,
           Subject: values.subject,
           Message: values.message,
+          source: "Catalog Request",
         }),
       });
 
-      if (!res.ok) {
-        throw new Error(`Formspree error: ${res.status}`);
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.message || `Server error: ${res.status}`);
       }
 
       toast({
         title: "Catalogue request sent",
-        description: "Thank you. Our technical team will review your request and respond within 24 hours.",
+        description: data.message || "Thank you. Our technical team will review your request and respond within 24 hours.",
       });
       form.reset({
         name: "",
@@ -96,10 +104,10 @@ export function CatalogRequestDialog({ open, onOpenChange }: CatalogRequestDialo
       });
       onOpenChange(false);
     } catch (error) {
-      console.error(error);
+      console.error("Form submission error:", error);
       toast({
         title: "Submission failed",
-        description: "There was a problem sending your request. Please try again or email us directly.",
+        description: error instanceof Error ? error.message : "There was a problem sending your request. Please try again or email us directly.",
         variant: "destructive",
       });
     }

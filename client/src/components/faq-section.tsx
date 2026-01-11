@@ -54,10 +54,6 @@ const faqs = [
         <a href="mailto:energy.apatel@gmail.com" className="text-primary hover:underline">
           energy.apatel@gmail.com
         </a>
-        ,{" "}
-        <a href="mailto:hi@kpatel.xyz" className="text-primary hover:underline">
-          hi@kpatel.xyz
-        </a>
         ), or by contacting our sales team directly. We typically respond within 24 hours and can provide detailed specifications, pricing, and delivery timelines based on your requirements.
       </>
     ),

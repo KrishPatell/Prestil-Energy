@@ -274,12 +274,6 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-primary shrink-0" />
-                <a href="mailto:hi@kpatel.xyz" className="text-muted-foreground hover:text-primary transition-colors">
-                  hi@kpatel.xyz
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary shrink-0" />
                 <a href="tel:+919824054002" className="text-muted-foreground hover:text-primary transition-colors">
                   +91 9824054002

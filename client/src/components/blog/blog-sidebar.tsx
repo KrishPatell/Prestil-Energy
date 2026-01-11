@@ -44,13 +44,6 @@ export function BlogSidebar({ relatedProducts = [], relatedPosts = [] }: BlogSid
             <Mail className="w-4 h-4 text-primary shrink-0" />
             <span>energy.apatel@gmail.com</span>
           </a>
-          <a
-            href="mailto:hi@kpatel.xyz"
-            className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Mail className="w-4 h-4 text-primary shrink-0" />
-            <span>hi@kpatel.xyz</span>
-          </a>
         </div>
         <Link href="/contact" className="mt-4 block">
           <Button variant="outline" className="w-full border-border text-foreground hover:bg-secondary">

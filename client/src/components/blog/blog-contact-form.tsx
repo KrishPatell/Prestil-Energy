@@ -18,7 +18,12 @@ import { ArrowRight } from "lucide-react";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqanbwl";
+// Backend API endpoint - sends emails to all 4 recipients:
+// 1. energy.apatel@gmail.com
+// 2. prestilindia@gmail.com
+// 3. abhi9824054002@yahoo.com
+// 4. abhi9824054002@gmail.com
+const CONTACT_API_ENDPOINT = "/api/contact";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -51,30 +56,39 @@ export function BlogContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch(CONTACT_API_ENDPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
-          ...values,
+          name: values.name,
+          company: values.company,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+          subject: "Blog Contact Form Inquiry",
           source: "Blog Contact Form",
         }),
       });
 
-      if (response.ok) {
-        toast({
-          title: "Message sent successfully",
-          description: "Our technical team will contact you within 24 hours.",
-        });
-        form.reset();
-      } else {
-        throw new Error("Failed to send message");
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || `Server error: ${response.status}`);
       }
+
+      toast({
+        title: "Message sent successfully",
+        description: data.message || "Our technical team will contact you within 24 hours.",
+      });
+      form.reset();
     } catch (error) {
+      console.error("Form submission error:", error);
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again or contact us directly.",
+        description: error instanceof Error ? error.message : "Failed to send message. Please try again or contact us directly.",
         variant: "destructive",
       });
     } finally {
