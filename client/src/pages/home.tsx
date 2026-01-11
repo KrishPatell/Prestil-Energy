@@ -7,6 +7,7 @@ import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 import { CTASection } from "@/components/cta-section";
 import { TechnicalResources } from "@/components/technical-resources";
 import { FAQSection } from "@/components/faq-section";
+import { SEO } from "@/components/seo";
 
 // Real images from public folder
 const heroImage = "/images/dark_cinematic_offshore_oil_rig_at_night_with_orange_lights.png";
@@ -17,9 +18,9 @@ const manufacturingImage = "/images/high-tech_manufacturing_facility_interior.pn
 const heroSlides = [
   {
     image: heroImage,
-    subtitle: "Industry-Leading ESP & SRP Solutions",
+    subtitle: "Industry-Leading Centrifugal Pump & SRP Solutions",
     titleLine1: "Manufacturer of Sucker Rod Pumps (SRP) &",
-    titleLine2: "Electric Submersible Pumps (ESP)",
+    titleLine2: "Centrifugal Pumps",
     titleLine3: "",
     description: "Delivering precision-engineered submersible pumps and electric motors for optimal oil and gas production. ISO 9001:2015 certified manufacturing with proven performance across global markets since 1995.",
   },
@@ -57,10 +58,10 @@ const products = [
     href: "/products",
   },
   {
-    title: "Integrated\nESP Solutions",
+    title: "Integrated\nCentrifugal Pump Solutions",
     description: "Complete artificial lift systems with gas separators, cables, control stations, and telemetry.",
     image: pumpImage,
-    specs: ["Full ESP Systems", "Telemetry included", "Turnkey solutions"],
+    specs: ["Full Centrifugal Pump Systems", "Telemetry included", "Turnkey solutions"],
     href: "/products",
   },
 ];
@@ -115,8 +116,40 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  // Structured data for homepage
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Prestil Energy Ltd.",
+    url: typeof window !== "undefined" ? window.location.origin : "https://prestil-energy.com",
+    description: "Manufacturer of submersible centrifugal pumps and electric motors for oil & gas production. Over 25 years of engineering excellence.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://prestil-energy.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground">
+    <>
+      <SEO
+        title="Prestil Energy Ltd. | Submersible Pumps & Electric Motors for Oil Production"
+        description="Manufacturer of submersible centrifugal pumps and electric motors for oil & gas production. Over 25 years of engineering excellence. ISO 9001:2015 certified."
+        keywords={[
+          "submersible pumps",
+          "electric motors",
+          "oil production",
+          "artificial lift",
+          "ESP systems",
+          "oil and gas equipment",
+          "submersible equipment",
+          "centrifugal pumps",
+        ]}
+        image="/images/dark_cinematic_offshore_oil_rig_at_night_with_orange_lights.png"
+        url="/"
+        structuredData={structuredData}
+      />
+      <div className="flex flex-col min-h-screen bg-background text-foreground">
 
       {/* Hero Section - Always dark background for impact */}
       <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-900">

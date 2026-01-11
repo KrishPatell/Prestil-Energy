@@ -153,6 +153,12 @@ export default function Contact() {
                     prestilindia@gmail.com
                   </a>
                 </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-primary shrink-0" />
+                  <a href="mailto:hi@kpatel.xyz" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                    hi@kpatel.xyz
+                  </a>
+                </div>
               </div>
             </motion.div>
 

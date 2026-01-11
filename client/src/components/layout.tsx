@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { label: "About", href: "/about" },
   { label: "Products", href: "/products" },
   { label: "Manufacturing", href: "/manufacturing" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -18,7 +19,7 @@ const PRODUCTS = [
   "Submersible Electric Motors",
   "Motor Protectors",
   "Gas Separators",
-  "Integrated ESP Solutions",
+  "Integrated Centrifugal Pump Solutions",
   "Sealed Metering Pumps",
 ];
 
@@ -264,6 +265,12 @@ export function Footer() {
                 <Mail className="w-4 h-4 text-primary shrink-0" />
                 <a href="mailto:prestilindia@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                   prestilindia@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-primary shrink-0" />
+                <a href="mailto:hi@kpatel.xyz" className="text-muted-foreground hover:text-primary transition-colors">
+                  hi@kpatel.xyz
                 </a>
               </li>
               <li className="flex items-center gap-3">

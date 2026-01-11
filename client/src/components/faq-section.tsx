@@ -22,8 +22,8 @@ const faqs = [
   },
   {
     id: 3,
-    question: "Do you provide complete ESP systems or individual components?",
-    answer: "We provide both individual components (pumps, motors, protectors, gas separators) and complete integrated ESP solutions. Our integrated systems include gas separators, power and flat cables, control stations, and telemetry systems, all engineered and selected based on specific well conditions.",
+    question: "Do you provide complete centrifugal pump systems or individual components?",
+    answer: "We provide both individual components (pumps, motors, protectors, gas separators) and complete integrated centrifugal pump solutions. Our integrated systems include gas separators, power and flat cables, control stations, and telemetry systems, all engineered and selected based on specific well conditions.",
   },
   {
     id: 4,
@@ -53,6 +53,10 @@ const faqs = [
         You can request a quote or technical consultation through our contact form, email (
         <a href="mailto:energy.apatel@gmail.com" className="text-primary hover:underline">
           energy.apatel@gmail.com
+        </a>
+        ,{" "}
+        <a href="mailto:hi@kpatel.xyz" className="text-primary hover:underline">
+          hi@kpatel.xyz
         </a>
         ), or by contacting our sales team directly. We typically respond within 24 hours and can provide detailed specifications, pricing, and delivery timelines based on your requirements.
       </>

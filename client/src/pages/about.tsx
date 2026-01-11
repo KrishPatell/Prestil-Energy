@@ -3,6 +3,7 @@ import { CheckCircle2, Factory, Award, Users, Globe } from "lucide-react";
 import { FeaturedProductsGrid } from "@/components/featured-products-grid";
 import { CTASection } from "@/components/cta-section";
 import { TechnicalResources } from "@/components/technical-resources";
+import { SEO } from "@/components/seo";
 
 const manufacturingImage = "/images/high-tech_manufacturing_facility_interior.png";
 
@@ -16,8 +17,25 @@ const capabilities = [
 ];
 
 export default function About() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Prestil Energy Ltd.",
+    description: "Learn about Prestil Energy Ltd., a manufacturer of submersible centrifugal pumps and electric motors for oil & gas production since 1995.",
+    url: typeof window !== "undefined" ? window.location.href : "https://prestil-energy.com/about",
+  };
+
   return (
-    <div className="bg-background min-h-screen text-foreground">
+    <>
+      <SEO
+        title="About Us | Prestil Energy Ltd. | Oil & Gas Equipment Manufacturer"
+        description="Learn about Prestil Energy Ltd., a manufacturer of submersible centrifugal pumps and electric motors for oil & gas production since 1995. ISO 9001:2015 certified."
+        keywords={["about prestil energy", "oil equipment manufacturer", "submersible pump company", "oil production equipment"]}
+        image="/images/high-tech_manufacturing_facility_interior.png"
+        url="/about"
+        structuredData={structuredData}
+      />
+      <div className="bg-background min-h-screen text-foreground">
       
       {/* Hero */}
       <section className="relative py-32 overflow-hidden bg-secondary">

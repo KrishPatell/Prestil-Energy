@@ -7,7 +7,7 @@ const caseStudies = [
   {
     id: 1,
     location: "Ukraine",
-    title: "High-Performance ESP System Deployment",
+    title: "High-Performance Centrifugal Pump System Deployment",
     description: "Successfully deployed 400-series pumps and motors in challenging well conditions with high gas content and elevated temperatures.",
     results: [
       { label: "Production Increase", value: "35%" },
@@ -31,7 +31,7 @@ const caseStudies = [
   {
     id: 3,
     location: "Lithuania",
-    title: "Integrated ESP Solution",
+    title: "Integrated Centrifugal Pump Solution",
     description: "Complete artificial lift system with gas separators, motors, and control systems delivering reliable production enhancement.",
     results: [
       { label: "System Reliability", value: "99.2%" },
