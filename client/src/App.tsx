@@ -26,6 +26,8 @@ import PumpPerformanceCurves from "@/pages/blog/category-1-pumps/pump-performanc
 import ModularPumpDesign from "@/pages/blog/category-1-pumps/modular-pump-design";
 import PumpValvesGuide from "@/pages/blog/category-1-pumps/pump-valves-guide";
 import PumpReliabilityMTTF from "@/pages/blog/category-1-pumps/pump-reliability-mttf";
+import CavitationNpshEspPumps from "@/pages/blog/category-1-pumps/cavitation-npsh-esp-pumps";
+import SandSlurryPumpStageDesign from "@/pages/blog/category-1-pumps/sand-slurry-pump-stage-design";
 
 // Blog Posts - Category 2: Motors
 import SubmersibleMotorsGuide from "@/pages/blog/category-2-motors/submersible-motors-guide";
@@ -38,6 +40,8 @@ import MotorThermalManagement from "@/pages/blog/category-2-motors/motor-thermal
 import MotorInsulationSystems from "@/pages/blog/category-2-motors/motor-insulation-systems";
 import MotorProtectorSystems from "@/pages/blog/category-2-motors/motor-protector-systems";
 import MotorAPIISOCompliance from "@/pages/blog/category-2-motors/motor-api-iso-compliance";
+import EspMotorThrustBearingSystems from "@/pages/blog/category-2-motors/esp-motor-thrust-bearing-systems";
+import SubmersibleMotorCoolingJacketDesign from "@/pages/blog/category-2-motors/submersible-motor-cooling-jacket-design";
 
 // Blog Posts - Category 3: Gas Separation
 import GasSeparatorsGuide from "@/pages/blog/category-3-gas-separation/gas-separators-guide";
@@ -45,6 +49,8 @@ import RotaryGasSeparators from "@/pages/blog/category-3-gas-separation/rotary-g
 import SeparatorDisperserTechnology from "@/pages/blog/category-3-gas-separation/separator-disperser-technology";
 import GasSeparatorSizing from "@/pages/blog/category-3-gas-separation/gas-separator-sizing";
 import PreventingGasLock from "@/pages/blog/category-3-gas-separation/preventing-gas-lock";
+import GasSeparatorIntakeHydraulics from "@/pages/blog/category-3-gas-separation/gas-separator-intake-hydraulics";
+import HighGorEspFluidHandling from "@/pages/blog/category-3-gas-separation/high-gor-esp-fluid-handling";
 
 // Blog Posts - Category 4: Integrated Solutions
 import CompleteESPSystems from "@/pages/blog/category-4-integrated-solutions/complete-esp-systems";
@@ -52,6 +58,8 @@ import ESPSystemDesign from "@/pages/blog/category-4-integrated-solutions/esp-sy
 import ESPCablesGuide from "@/pages/blog/category-4-integrated-solutions/esp-cables-guide";
 import ESPControlStations from "@/pages/blog/category-4-integrated-solutions/esp-control-stations";
 import ESPTelemetryMonitoring from "@/pages/blog/category-4-integrated-solutions/esp-telemetry-monitoring";
+import EspSurfaceSwitchgearProtection from "@/pages/blog/category-4-integrated-solutions/esp-surface-switchgear-protection";
+import EspDownholeMonitoringPressureSensors from "@/pages/blog/category-4-integrated-solutions/esp-downhole-monitoring-pressure-sensors";
 
 // Blog Posts - Category 5: Maintenance
 import ESPInstallationGuide from "@/pages/blog/category-5-maintenance/esp-installation-guide";
@@ -59,6 +67,8 @@ import ESPCommissioningChecklist from "@/pages/blog/category-5-maintenance/esp-c
 import PredictiveMaintenanceESP from "@/pages/blog/category-5-maintenance/predictive-maintenance-esp";
 import ESPTroubleshootingGuide from "@/pages/blog/category-5-maintenance/esp-troubleshooting-guide";
 import MaximizingESPRunLife from "@/pages/blog/category-5-maintenance/maximizing-esp-run-life";
+import EspRiglessInterventionOptions from "@/pages/blog/category-5-maintenance/esp-rigless-intervention-options";
+import EspStorageHandlingField from "@/pages/blog/category-5-maintenance/esp-storage-handling-field";
 
 function Router() {
   return (
@@ -80,6 +90,8 @@ function Router() {
         <Route path="/blog/modular-pump-design" component={ModularPumpDesign} />
         <Route path="/blog/pump-valves-guide" component={PumpValvesGuide} />
         <Route path="/blog/pump-reliability-mttf" component={PumpReliabilityMTTF} />
+        <Route path="/blog/cavitation-npsh-esp-pumps" component={CavitationNpshEspPumps} />
+        <Route path="/blog/sand-slurry-pump-stage-design" component={SandSlurryPumpStageDesign} />
         {/* Category 2: Motors */}
         <Route path="/blog/submersible-motors-guide" component={SubmersibleMotorsGuide} />
         <Route path="/blog/motor-sections-comparison" component={MotorSectionsComparison} />
@@ -91,24 +103,32 @@ function Router() {
         <Route path="/blog/motor-insulation-systems" component={MotorInsulationSystems} />
         <Route path="/blog/motor-protector-systems" component={MotorProtectorSystems} />
         <Route path="/blog/motor-api-iso-compliance" component={MotorAPIISOCompliance} />
+        <Route path="/blog/esp-motor-thrust-bearing-systems" component={EspMotorThrustBearingSystems} />
+        <Route path="/blog/submersible-motor-cooling-jacket-design" component={SubmersibleMotorCoolingJacketDesign} />
         {/* Category 3: Gas Separation */}
         <Route path="/blog/gas-separators-guide" component={GasSeparatorsGuide} />
         <Route path="/blog/rotary-gas-separators" component={RotaryGasSeparators} />
         <Route path="/blog/separator-disperser-technology" component={SeparatorDisperserTechnology} />
         <Route path="/blog/gas-separator-sizing" component={GasSeparatorSizing} />
         <Route path="/blog/preventing-gas-lock" component={PreventingGasLock} />
+        <Route path="/blog/gas-separator-intake-hydraulics" component={GasSeparatorIntakeHydraulics} />
+        <Route path="/blog/high-gor-esp-fluid-handling" component={HighGorEspFluidHandling} />
         {/* Category 4: Integrated Solutions */}
         <Route path="/blog/complete-esp-systems" component={CompleteESPSystems} />
         <Route path="/blog/esp-system-design" component={ESPSystemDesign} />
         <Route path="/blog/esp-cables-guide" component={ESPCablesGuide} />
         <Route path="/blog/esp-control-stations" component={ESPControlStations} />
         <Route path="/blog/esp-telemetry-monitoring" component={ESPTelemetryMonitoring} />
+        <Route path="/blog/esp-surface-switchgear-protection" component={EspSurfaceSwitchgearProtection} />
+        <Route path="/blog/esp-downhole-monitoring-pressure-sensors" component={EspDownholeMonitoringPressureSensors} />
         {/* Category 5: Maintenance */}
         <Route path="/blog/esp-installation-guide" component={ESPInstallationGuide} />
         <Route path="/blog/esp-commissioning-checklist" component={ESPCommissioningChecklist} />
         <Route path="/blog/predictive-maintenance-esp" component={PredictiveMaintenanceESP} />
         <Route path="/blog/esp-troubleshooting-guide" component={ESPTroubleshootingGuide} />
         <Route path="/blog/maximizing-esp-run-life" component={MaximizingESPRunLife} />
+        <Route path="/blog/esp-rigless-intervention-options" component={EspRiglessInterventionOptions} />
+        <Route path="/blog/esp-storage-handling-field" component={EspStorageHandlingField} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
