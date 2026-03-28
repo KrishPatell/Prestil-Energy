@@ -121,6 +121,20 @@
     <priority>0.7</priority>
   </url>
   
+  <url>
+    <loc>https://prestil-energy.com/blog/cavitation-npsh-esp-pumps</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/sand-slurry-pump-stage-design</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <!-- Blog Posts - Category 2: Motors -->
   <url>
     <loc>https://prestil-energy.com/blog/submersible-motors-guide</loc>
@@ -192,6 +206,20 @@
     <priority>0.7</priority>
   </url>
   
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-motor-thrust-bearing-systems</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/submersible-motor-cooling-jacket-design</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <!-- Blog Posts - Category 3: Gas Separation -->
   <url>
     <loc>https://prestil-energy.com/blog/gas-separators-guide</loc>
@@ -224,6 +252,20 @@
   <url>
     <loc>https://prestil-energy.com/blog/preventing-gas-lock</loc>
     <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/gas-separator-intake-hydraulics</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/high-gor-esp-fluid-handling</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -264,6 +306,55 @@
     <priority>0.7</priority>
   </url>
   
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-energy-efficiency-2026</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/digital-twin-esp-systems</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-sustainability-esg</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/ai-ml-esp-optimization</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-unconventional-resources</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-surface-switchgear-protection</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-downhole-monitoring-pressure-sensors</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <!-- Blog Posts - Category 5: Maintenance -->
   <url>
     <loc>https://prestil-energy.com/blog/esp-installation-guide</loc>
@@ -296,6 +387,20 @@
   <url>
     <loc>https://prestil-energy.com/blog/maximizing-esp-run-life</loc>
     <lastmod>2026-01-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-rigless-intervention-options</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-storage-handling-field</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

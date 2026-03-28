@@ -58,6 +58,11 @@ import ESPSystemDesign from "@/pages/blog/category-4-integrated-solutions/esp-sy
 import ESPCablesGuide from "@/pages/blog/category-4-integrated-solutions/esp-cables-guide";
 import ESPControlStations from "@/pages/blog/category-4-integrated-solutions/esp-control-stations";
 import ESPTelemetryMonitoring from "@/pages/blog/category-4-integrated-solutions/esp-telemetry-monitoring";
+import ESPEnergyEfficiency2026 from "@/pages/blog/category-4-integrated-solutions/esp-energy-efficiency-2026";
+import DigitalTwinESPSystems from "@/pages/blog/category-4-integrated-solutions/digital-twin-esp-systems";
+import ESPSustainabilityESG from "@/pages/blog/category-4-integrated-solutions/esp-sustainability-esg";
+import AIMLESPOptimization from "@/pages/blog/category-4-integrated-solutions/ai-ml-esp-optimization";
+import ESPUnconventionalResources from "@/pages/blog/category-4-integrated-solutions/esp-unconventional-resources";
 import EspSurfaceSwitchgearProtection from "@/pages/blog/category-4-integrated-solutions/esp-surface-switchgear-protection";
 import EspDownholeMonitoringPressureSensors from "@/pages/blog/category-4-integrated-solutions/esp-downhole-monitoring-pressure-sensors";
 
@@ -119,6 +124,11 @@ function Router() {
         <Route path="/blog/esp-cables-guide" component={ESPCablesGuide} />
         <Route path="/blog/esp-control-stations" component={ESPControlStations} />
         <Route path="/blog/esp-telemetry-monitoring" component={ESPTelemetryMonitoring} />
+        <Route path="/blog/esp-energy-efficiency-2026" component={ESPEnergyEfficiency2026} />
+        <Route path="/blog/digital-twin-esp-systems" component={DigitalTwinESPSystems} />
+        <Route path="/blog/esp-sustainability-esg" component={ESPSustainabilityESG} />
+        <Route path="/blog/ai-ml-esp-optimization" component={AIMLESPOptimization} />
+        <Route path="/blog/esp-unconventional-resources" component={ESPUnconventionalResources} />
         <Route path="/blog/esp-surface-switchgear-protection" component={EspSurfaceSwitchgearProtection} />
         <Route path="/blog/esp-downhole-monitoring-pressure-sensors" component={EspDownholeMonitoringPressureSensors} />
         {/* Category 5: Maintenance */}

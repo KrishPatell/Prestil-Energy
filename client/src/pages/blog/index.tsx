@@ -18,14 +18,35 @@ const blogPosts = blogPostsMetadata.map((meta) => ({
   readTime: meta.readTime,
 }));
 
-const categories = [
-  { id: "all", label: "All Posts", count: 35 },
-  { id: "pumps", label: "Pumps", count: 10 },
-  { id: "motors", label: "Motors", count: 10 },
-  { id: "gas-separation", label: "Gas Separation", count: 5 },
-  { id: "integrated-solutions", label: "Integrated Solutions", count: 5 },
-  { id: "maintenance", label: "Maintenance", count: 5 },
-];
+const categoryFilterIds = [
+  { id: "all", label: "All Posts" },
+  { id: "pumps", label: "Pumps" },
+  { id: "motors", label: "Motors" },
+  { id: "gas-separation", label: "Gas Separation" },
+  { id: "integrated-solutions", label: "Integrated Solutions" },
+  { id: "maintenance", label: "Maintenance" },
+] as const;
+
+function buildBlogCategories() {
+  const perCategory: Record<(typeof categoryFilterIds)[number]["id"], number> = {
+    all: blogPostsMetadata.length,
+    pumps: 0,
+    motors: 0,
+    "gas-separation": 0,
+    "integrated-solutions": 0,
+    maintenance: 0,
+  };
+  for (const meta of blogPostsMetadata) {
+    perCategory[meta.category]++;
+  }
+  return categoryFilterIds.map((c) => ({
+    id: c.id,
+    label: c.label,
+    count: c.id === "all" ? perCategory.all : perCategory[c.id],
+  }));
+}
+
+const categories = buildBlogCategories();
 
 export default function BlogIndex() {
   const [activeCategory, setActiveCategory] = useState("all");
