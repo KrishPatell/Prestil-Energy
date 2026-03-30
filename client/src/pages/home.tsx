@@ -110,6 +110,14 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
+    // Preload hero images once to prevent visual "reload" flashes
+    heroSlides.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.image;
+    });
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 6000);
@@ -162,6 +170,11 @@ export default function Home() {
             <img
               src={slide.image}
               alt="Industrial Background"
+              fetchPriority={index === 0 ? "high" : "auto"}
+              loading="eager"
+              decoding="async"
+              width={1408}
+              height={768}
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent" />
@@ -171,7 +184,6 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-20">
           <motion.div
-            key={currentSlide}
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
@@ -215,8 +227,9 @@ export default function Home() {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
+                aria-label={`Show slide ${index + 1}`}
                 className={`h-1 rounded-full transition-all duration-300 ${index === currentSlide ? "w-12 bg-primary" : "w-6 bg-white/30 hover:bg-white/50"
-                  }`}
+                  } carousel-dot-hit`}
               />
             ))}
           </div>

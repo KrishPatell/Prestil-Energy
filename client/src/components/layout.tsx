@@ -69,6 +69,10 @@ export function Navbar() {
           <img 
             src="/logo.png" 
             alt="Prestil Energy Ltd." 
+            width={2230}
+            height={664}
+            loading="eager"
+            decoding="async"
             className="h-10 w-auto"
           />
         </Link>
@@ -132,7 +136,7 @@ export function Navbar() {
             <SheetContent side="right" className="bg-background border-l border-border w-[300px] p-0">
               <div className="p-8 flex flex-col h-full">
                 <div className="mb-8">
-                  <img src="/logo.png" alt="Prestil Energy" className="h-8" />
+                  <img src="/logo.png" alt="Prestil Energy" width={2230} height={664} loading="eager" decoding="async" className="h-8" />
                 </div>
                 <nav className="flex flex-col gap-4">
                   {NAV_ITEMS.map((item) => (
@@ -176,7 +180,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <img src="/logo.png" alt="Prestil Energy Ltd." className="h-10 mb-6" />
+            <img src="/logo.png" alt="Prestil Energy Ltd." width={2230} height={664} loading="lazy" decoding="async" className="h-10 mb-6" />
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Prestil Energy Ltd. is a leading manufacturer of submersible centrifugal pumps and electric motors for oil & gas production, with over 25 years of engineering excellence.
             </p>
@@ -185,6 +189,7 @@ export function Footer() {
                 href="https://www.linkedin.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Follow us on LinkedIn"
                 className="w-10 h-10 bg-secondary hover:bg-primary border border-border hover:border-primary flex items-center justify-center transition-all group"
               >
                 <Linkedin className="w-4 h-4 text-muted-foreground group-hover:text-white" />
@@ -194,7 +199,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-foreground font-semibold mb-6 text-sm tracking-wider uppercase">Quick Links</h4>
+            <h3 className="text-foreground font-semibold mb-6 text-sm tracking-wider uppercase">Quick Links</h3>
             <ul className="space-y-3 text-sm">
               <li>
                 <Link href="/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
@@ -237,7 +242,7 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="text-foreground font-semibold mb-6 text-sm tracking-wider uppercase">Products</h4>
+            <h3 className="text-foreground font-semibold mb-6 text-sm tracking-wider uppercase">Products</h3>
             <ul className="space-y-3 text-sm">
               {PRODUCTS.map((product) => (
                 <li key={product}>
@@ -251,7 +256,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-foreground font-semibold mb-6 text-sm tracking-wider uppercase">Contact</h4>
+            <h3 className="text-foreground font-semibold mb-6 text-sm tracking-wider uppercase">Contact</h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-1 shrink-0" />

@@ -32,6 +32,10 @@ export function BlogHero({
         <img
           src={image}
           alt={title}
+          width={1408}
+          height={768}
+          loading="eager"
+          decoding="async"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-secondary via-secondary/95 to-secondary" />

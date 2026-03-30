@@ -10,7 +10,33 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  app.use(
+    express.static(distPath, {
+      setHeaders: (res, filePath) => {
+        const ext = path.extname(filePath);
+        const immutableExts = new Set([
+          ".js",
+          ".css",
+          ".png",
+          ".jpg",
+          ".jpeg",
+          ".gif",
+          ".webp",
+          ".svg",
+          ".ico",
+          ".woff",
+          ".woff2",
+          ".ttf",
+          ".otf",
+        ]);
+        if (immutableExts.has(ext)) {
+          res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+        } else if (ext === ".html") {
+          res.setHeader("Cache-Control", "public, max-age=0, must-revalidate");
+        }
+      },
+    }),
+  );
 
   // Serve sitemap.xml
   app.get("/sitemap.xml", (_req, res) => {

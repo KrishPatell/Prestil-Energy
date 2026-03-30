@@ -5,89 +5,91 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Layout } from "@/components/layout";
 import { Analytics } from "@vercel/analytics/react";
+import { lazy, Suspense } from "react";
 import NotFound from "@/pages/not-found";
 
 // Pages
 import Home from "@/pages/home";
-import About from "@/pages/about";
-import Products from "@/pages/products";
-import Manufacturing from "@/pages/manufacturing";
-import Contact from "@/pages/contact";
-import BlogIndex from "@/pages/blog/index";
+const About = lazy(() => import("@/pages/about"));
+const Products = lazy(() => import("@/pages/products"));
+const Manufacturing = lazy(() => import("@/pages/manufacturing"));
+const Contact = lazy(() => import("@/pages/contact"));
+const BlogIndex = lazy(() => import("@/pages/blog/index"));
 
 // Blog Posts - Category 1: Pumps
-import SubmersibleCentrifugalPumpsGuide from "@/pages/blog/category-1-pumps/submersible-centrifugal-pumps-guide";
-import Pump92mmHousingAdvantages from "@/pages/blog/category-1-pumps/92mm-pump-housing-advantages";
-import MultistagePumpDesign from "@/pages/blog/category-1-pumps/multistage-pump-design";
-import PumpFlowRateSelection from "@/pages/blog/category-1-pumps/pump-flow-rate-selection";
-import HeatResistantPumps from "@/pages/blog/category-1-pumps/heat-resistant-pumps";
-import WearResistantPumps from "@/pages/blog/category-1-pumps/wear-resistant-pumps";
-import PumpPerformanceCurves from "@/pages/blog/category-1-pumps/pump-performance-curves";
-import ModularPumpDesign from "@/pages/blog/category-1-pumps/modular-pump-design";
-import PumpValvesGuide from "@/pages/blog/category-1-pumps/pump-valves-guide";
-import PumpReliabilityMTTF from "@/pages/blog/category-1-pumps/pump-reliability-mttf";
-import CavitationNpshEspPumps from "@/pages/blog/category-1-pumps/cavitation-npsh-esp-pumps";
-import SandSlurryPumpStageDesign from "@/pages/blog/category-1-pumps/sand-slurry-pump-stage-design";
-import EspPumpShaftCouplingAlignment from "@/pages/blog/category-1-pumps/esp-pump-shaft-coupling-alignment";
-import EspPumpIntakeScreenSandControl from "@/pages/blog/category-1-pumps/esp-pump-intake-screen-sand-control";
+const SubmersibleCentrifugalPumpsGuide = lazy(() => import("@/pages/blog/category-1-pumps/submersible-centrifugal-pumps-guide"));
+const Pump92mmHousingAdvantages = lazy(() => import("@/pages/blog/category-1-pumps/92mm-pump-housing-advantages"));
+const MultistagePumpDesign = lazy(() => import("@/pages/blog/category-1-pumps/multistage-pump-design"));
+const PumpFlowRateSelection = lazy(() => import("@/pages/blog/category-1-pumps/pump-flow-rate-selection"));
+const HeatResistantPumps = lazy(() => import("@/pages/blog/category-1-pumps/heat-resistant-pumps"));
+const WearResistantPumps = lazy(() => import("@/pages/blog/category-1-pumps/wear-resistant-pumps"));
+const PumpPerformanceCurves = lazy(() => import("@/pages/blog/category-1-pumps/pump-performance-curves"));
+const ModularPumpDesign = lazy(() => import("@/pages/blog/category-1-pumps/modular-pump-design"));
+const PumpValvesGuide = lazy(() => import("@/pages/blog/category-1-pumps/pump-valves-guide"));
+const PumpReliabilityMTTF = lazy(() => import("@/pages/blog/category-1-pumps/pump-reliability-mttf"));
+const CavitationNpshEspPumps = lazy(() => import("@/pages/blog/category-1-pumps/cavitation-npsh-esp-pumps"));
+const SandSlurryPumpStageDesign = lazy(() => import("@/pages/blog/category-1-pumps/sand-slurry-pump-stage-design"));
+const EspPumpShaftCouplingAlignment = lazy(() => import("@/pages/blog/category-1-pumps/esp-pump-shaft-coupling-alignment"));
+const EspPumpIntakeScreenSandControl = lazy(() => import("@/pages/blog/category-1-pumps/esp-pump-intake-screen-sand-control"));
 
 // Blog Posts - Category 2: Motors
-import SubmersibleMotorsGuide from "@/pages/blog/category-2-motors/submersible-motors-guide";
-import MotorSectionsComparison from "@/pages/blog/category-2-motors/motor-sections-comparison";
-import MotorDiameterSelection from "@/pages/blog/category-2-motors/motor-diameter-selection";
-import Stator24SlotTechnology from "@/pages/blog/category-2-motors/24-slot-stator-technology";
-import MotorPowerSelection from "@/pages/blog/category-2-motors/motor-power-selection";
-import MotorVoltageGuide from "@/pages/blog/category-2-motors/motor-voltage-guide";
-import MotorThermalManagement from "@/pages/blog/category-2-motors/motor-thermal-management";
-import MotorInsulationSystems from "@/pages/blog/category-2-motors/motor-insulation-systems";
-import MotorProtectorSystems from "@/pages/blog/category-2-motors/motor-protector-systems";
-import MotorAPIISOCompliance from "@/pages/blog/category-2-motors/motor-api-iso-compliance";
-import EspMotorThrustBearingSystems from "@/pages/blog/category-2-motors/esp-motor-thrust-bearing-systems";
-import SubmersibleMotorCoolingJacketDesign from "@/pages/blog/category-2-motors/submersible-motor-cooling-jacket-design";
-import MotorEfficiencyIeStandardsEsp from "@/pages/blog/category-2-motors/motor-efficiency-ie-standards-esp";
-import EspMotorVibrationMonitoring from "@/pages/blog/category-2-motors/esp-motor-vibration-monitoring";
+const SubmersibleMotorsGuide = lazy(() => import("@/pages/blog/category-2-motors/submersible-motors-guide"));
+const MotorSectionsComparison = lazy(() => import("@/pages/blog/category-2-motors/motor-sections-comparison"));
+const MotorDiameterSelection = lazy(() => import("@/pages/blog/category-2-motors/motor-diameter-selection"));
+const Stator24SlotTechnology = lazy(() => import("@/pages/blog/category-2-motors/24-slot-stator-technology"));
+const MotorPowerSelection = lazy(() => import("@/pages/blog/category-2-motors/motor-power-selection"));
+const MotorVoltageGuide = lazy(() => import("@/pages/blog/category-2-motors/motor-voltage-guide"));
+const MotorThermalManagement = lazy(() => import("@/pages/blog/category-2-motors/motor-thermal-management"));
+const MotorInsulationSystems = lazy(() => import("@/pages/blog/category-2-motors/motor-insulation-systems"));
+const MotorProtectorSystems = lazy(() => import("@/pages/blog/category-2-motors/motor-protector-systems"));
+const MotorAPIISOCompliance = lazy(() => import("@/pages/blog/category-2-motors/motor-api-iso-compliance"));
+const EspMotorThrustBearingSystems = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-thrust-bearing-systems"));
+const SubmersibleMotorCoolingJacketDesign = lazy(() => import("@/pages/blog/category-2-motors/submersible-motor-cooling-jacket-design"));
+const MotorEfficiencyIeStandardsEsp = lazy(() => import("@/pages/blog/category-2-motors/motor-efficiency-ie-standards-esp"));
+const EspMotorVibrationMonitoring = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-vibration-monitoring"));
 
 // Blog Posts - Category 3: Gas Separation
-import GasSeparatorsGuide from "@/pages/blog/category-3-gas-separation/gas-separators-guide";
-import RotaryGasSeparators from "@/pages/blog/category-3-gas-separation/rotary-gas-separators";
-import SeparatorDisperserTechnology from "@/pages/blog/category-3-gas-separation/separator-disperser-technology";
-import GasSeparatorSizing from "@/pages/blog/category-3-gas-separation/gas-separator-sizing";
-import PreventingGasLock from "@/pages/blog/category-3-gas-separation/preventing-gas-lock";
-import GasSeparatorIntakeHydraulics from "@/pages/blog/category-3-gas-separation/gas-separator-intake-hydraulics";
-import HighGorEspFluidHandling from "@/pages/blog/category-3-gas-separation/high-gor-esp-fluid-handling";
-import GasFluidPropertiesSeparatorDesign from "@/pages/blog/category-3-gas-separation/gas-fluid-properties-separator-design";
-import EspGasAnchorFluidVelocity from "@/pages/blog/category-3-gas-separation/esp-gas-anchor-fluid-velocity";
+const GasSeparatorsGuide = lazy(() => import("@/pages/blog/category-3-gas-separation/gas-separators-guide"));
+const RotaryGasSeparators = lazy(() => import("@/pages/blog/category-3-gas-separation/rotary-gas-separators"));
+const SeparatorDisperserTechnology = lazy(() => import("@/pages/blog/category-3-gas-separation/separator-disperser-technology"));
+const GasSeparatorSizing = lazy(() => import("@/pages/blog/category-3-gas-separation/gas-separator-sizing"));
+const PreventingGasLock = lazy(() => import("@/pages/blog/category-3-gas-separation/preventing-gas-lock"));
+const GasSeparatorIntakeHydraulics = lazy(() => import("@/pages/blog/category-3-gas-separation/gas-separator-intake-hydraulics"));
+const HighGorEspFluidHandling = lazy(() => import("@/pages/blog/category-3-gas-separation/high-gor-esp-fluid-handling"));
+const GasFluidPropertiesSeparatorDesign = lazy(() => import("@/pages/blog/category-3-gas-separation/gas-fluid-properties-separator-design"));
+const EspGasAnchorFluidVelocity = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-gas-anchor-fluid-velocity"));
 
 // Blog Posts - Category 4: Integrated Solutions
-import CompleteESPSystems from "@/pages/blog/category-4-integrated-solutions/complete-esp-systems";
-import ESPSystemDesign from "@/pages/blog/category-4-integrated-solutions/esp-system-design";
-import ESPCablesGuide from "@/pages/blog/category-4-integrated-solutions/esp-cables-guide";
-import ESPControlStations from "@/pages/blog/category-4-integrated-solutions/esp-control-stations";
-import ESPTelemetryMonitoring from "@/pages/blog/category-4-integrated-solutions/esp-telemetry-monitoring";
-import ESPEnergyEfficiency2026 from "@/pages/blog/category-4-integrated-solutions/esp-energy-efficiency-2026";
-import DigitalTwinESPSystems from "@/pages/blog/category-4-integrated-solutions/digital-twin-esp-systems";
-import ESPSustainabilityESG from "@/pages/blog/category-4-integrated-solutions/esp-sustainability-esg";
-import AIMLESPOptimization from "@/pages/blog/category-4-integrated-solutions/ai-ml-esp-optimization";
-import ESPUnconventionalResources from "@/pages/blog/category-4-integrated-solutions/esp-unconventional-resources";
-import EspSurfaceSwitchgearProtection from "@/pages/blog/category-4-integrated-solutions/esp-surface-switchgear-protection";
-import EspDownholeMonitoringPressureSensors from "@/pages/blog/category-4-integrated-solutions/esp-downhole-monitoring-pressure-sensors";
-import EspWellheadPenetratorCables from "@/pages/blog/category-4-integrated-solutions/esp-wellhead-penetrator-cables";
-import EspSensorsVsdControlIntegration from "@/pages/blog/category-4-integrated-solutions/esp-sensors-vsd-control-integration";
+const CompleteESPSystems = lazy(() => import("@/pages/blog/category-4-integrated-solutions/complete-esp-systems"));
+const ESPSystemDesign = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-system-design"));
+const ESPCablesGuide = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-cables-guide"));
+const ESPControlStations = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-control-stations"));
+const ESPTelemetryMonitoring = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-telemetry-monitoring"));
+const ESPEnergyEfficiency2026 = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-energy-efficiency-2026"));
+const DigitalTwinESPSystems = lazy(() => import("@/pages/blog/category-4-integrated-solutions/digital-twin-esp-systems"));
+const ESPSustainabilityESG = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-sustainability-esg"));
+const AIMLESPOptimization = lazy(() => import("@/pages/blog/category-4-integrated-solutions/ai-ml-esp-optimization"));
+const ESPUnconventionalResources = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-unconventional-resources"));
+const EspSurfaceSwitchgearProtection = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-surface-switchgear-protection"));
+const EspDownholeMonitoringPressureSensors = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-downhole-monitoring-pressure-sensors"));
+const EspWellheadPenetratorCables = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-wellhead-penetrator-cables"));
+const EspSensorsVsdControlIntegration = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-sensors-vsd-control-integration"));
 
 // Blog Posts - Category 5: Maintenance
-import ESPInstallationGuide from "@/pages/blog/category-5-maintenance/esp-installation-guide";
-import ESPCommissioningChecklist from "@/pages/blog/category-5-maintenance/esp-commissioning-checklist";
-import PredictiveMaintenanceESP from "@/pages/blog/category-5-maintenance/predictive-maintenance-esp";
-import ESPTroubleshootingGuide from "@/pages/blog/category-5-maintenance/esp-troubleshooting-guide";
-import MaximizingESPRunLife from "@/pages/blog/category-5-maintenance/maximizing-esp-run-life";
-import EspRiglessInterventionOptions from "@/pages/blog/category-5-maintenance/esp-rigless-intervention-options";
-import EspStorageHandlingField from "@/pages/blog/category-5-maintenance/esp-storage-handling-field";
-import EspPostPullInspectionAnalysis from "@/pages/blog/category-5-maintenance/esp-post-pull-inspection-analysis";
-import EspChemicalCompatibilityMaterials from "@/pages/blog/category-5-maintenance/esp-chemical-compatibility-materials";
+const ESPInstallationGuide = lazy(() => import("@/pages/blog/category-5-maintenance/esp-installation-guide"));
+const ESPCommissioningChecklist = lazy(() => import("@/pages/blog/category-5-maintenance/esp-commissioning-checklist"));
+const PredictiveMaintenanceESP = lazy(() => import("@/pages/blog/category-5-maintenance/predictive-maintenance-esp"));
+const ESPTroubleshootingGuide = lazy(() => import("@/pages/blog/category-5-maintenance/esp-troubleshooting-guide"));
+const MaximizingESPRunLife = lazy(() => import("@/pages/blog/category-5-maintenance/maximizing-esp-run-life"));
+const EspRiglessInterventionOptions = lazy(() => import("@/pages/blog/category-5-maintenance/esp-rigless-intervention-options"));
+const EspStorageHandlingField = lazy(() => import("@/pages/blog/category-5-maintenance/esp-storage-handling-field"));
+const EspPostPullInspectionAnalysis = lazy(() => import("@/pages/blog/category-5-maintenance/esp-post-pull-inspection-analysis"));
+const EspChemicalCompatibilityMaterials = lazy(() => import("@/pages/blog/category-5-maintenance/esp-chemical-compatibility-materials"));
 
 function Router() {
   return (
     <Layout>
+      <Suspense fallback={<div className="min-h-[40vh]" />}>
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
@@ -162,6 +164,7 @@ function Router() {
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
+      </Suspense>
     </Layout>
   );
 }

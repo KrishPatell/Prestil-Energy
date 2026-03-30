@@ -177,3 +177,14 @@ html {
   box-shadow: 0 0 40px hsla(11, 78%, 54%, 0.3);
 }
 
+/* Expand small carousel controls hit area without visual change */
+.carousel-dot-hit {
+  position: relative;
+}
+
+.carousel-dot-hit::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+}
+
