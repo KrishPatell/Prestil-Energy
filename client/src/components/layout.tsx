@@ -68,9 +68,11 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-3 group">
           <img 
             src="/logo.png" 
+            srcSet="/logo-470.png 470w, /logo-940.png 940w, /logo.png 2230w"
+            sizes="235px"
             alt="Prestil Energy Ltd." 
-            width={2230}
-            height={664}
+            width={235}
+            height={70}
             loading="eager"
             decoding="async"
             className="h-10 w-auto"
@@ -129,14 +131,14 @@ export function Navbar() {
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-foreground">
+              <Button variant="ghost" size="icon" className="text-foreground" aria-label="Open navigation menu">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="bg-background border-l border-border w-[300px] p-0">
               <div className="p-8 flex flex-col h-full">
                 <div className="mb-8">
-                  <img src="/logo.png" alt="Prestil Energy" width={2230} height={664} loading="eager" decoding="async" className="h-8" />
+                  <img src="/logo.png" srcSet="/logo-470.png 470w, /logo-940.png 940w, /logo.png 2230w" sizes="188px" alt="Prestil Energy" width={188} height={56} loading="eager" decoding="async" className="h-8 w-auto" />
                 </div>
                 <nav className="flex flex-col gap-4">
                   {NAV_ITEMS.map((item) => (
@@ -180,7 +182,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <img src="/logo.png" alt="Prestil Energy Ltd." width={2230} height={664} loading="lazy" decoding="async" className="h-10 mb-6" />
+            <img src="/logo.png" srcSet="/logo-470.png 470w, /logo-940.png 940w, /logo.png 2230w" sizes="235px" alt="Prestil Energy Ltd." width={235} height={70} loading="lazy" decoding="async" className="h-10 w-auto mb-6" />
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Prestil Energy Ltd. is a leading manufacturer of submersible centrifugal pumps and electric motors for oil & gas production, with over 25 years of engineering excellence.
             </p>

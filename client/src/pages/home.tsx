@@ -33,7 +33,7 @@ const heroSlides = [
     description: "Prestil Energy Ltd has been a manufacturer of submersible centrifugal pumps and submersible electric motors for oil and gas production, well services, and production enhancement applications since 1995.",
   },
   {
-    image: "https://khemz-ipec.com.ua/bd/photoalbum/images/18-09-2013%20235.jpg",
+    image: "/images/hero-industrial-background.webp",
     subtitle: "API Quality Products",
     titleLine1: "Manufacturer of Sucker Rod Pumps (SRP) &",
     titleLine2: "Electric Submersible Pump (ESP)",
@@ -207,17 +207,17 @@ export default function Home() {
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4">
-              <Link href="/products">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold h-14 px-8 text-sm rounded-sm group">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-slate-900 font-semibold h-14 px-8 text-sm rounded-sm group">
+                <Link href="/products">
                   View Products
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 h-14 px-8 text-sm rounded-sm">
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 h-14 px-8 text-sm rounded-sm">
+                <Link href="/contact">
                   Request Quote
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </motion.div>
           </motion.div>
 
@@ -228,9 +228,13 @@ export default function Home() {
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 aria-label={`Show slide ${index + 1}`}
-                className={`h-1 rounded-full transition-all duration-300 ${index === currentSlide ? "w-12 bg-primary" : "w-6 bg-white/30 hover:bg-white/50"
+                className={`h-11 w-11 rounded-full transition-all duration-300 flex items-center justify-center ${index === currentSlide ? "" : "hover:bg-white/10"
                   } carousel-dot-hit`}
-              />
+              >
+                <span
+                  className={`h-1 rounded-full transition-all duration-300 ${index === currentSlide ? "w-12 bg-primary" : "w-6 bg-white/30 hover:bg-white/50"}`}
+                />
+              </button>
             ))}
           </div>
         </div>
@@ -317,7 +321,13 @@ export default function Home() {
             >
               <div className="aspect-[4/3] bg-card border border-border overflow-hidden">
                 <img
-                  src="https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/Gemini_Generated_Image_mrxrqimrxrqimrxr%201.webp"
+                  src="/images/manufacturing-facility.webp"
+                  srcSet="/images/manufacturing-facility-640.webp 640w, /images/manufacturing-facility-960.webp 960w, /images/manufacturing-facility.webp 1280w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
+                  width={1280}
+                  height={960}
+                  loading="lazy"
+                  decoding="async"
                   alt="Prestil Energy Manufacturing Facility"
                   className="w-full h-full object-cover"
                 />

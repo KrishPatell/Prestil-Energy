@@ -497,12 +497,12 @@ export default function Products() {
                       ))}
                     </div>
 
-                  <Link href="/contact">
-                      <Button className="w-full bg-secondary border border-border text-foreground hover:bg-primary hover:text-white hover:border-primary transition-all group/btn">
+                      <Button asChild className="w-full bg-secondary border border-border text-foreground hover:bg-primary hover:text-white hover:border-primary transition-all group/btn">
+                        <Link href="/contact">
                         <span>Request Quote</span>
                         <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                        </Link>
                      </Button>
-                  </Link>
                 </div>
               </div>
               </motion.div>

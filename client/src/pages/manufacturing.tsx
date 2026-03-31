@@ -83,7 +83,13 @@ export default function Manufacturing() {
             >
               <div className="aspect-[4/3] bg-muted border border-border overflow-hidden">
                 <img 
-                  src="https://pub-2752c63c2f67411bbfaa5eece76e2136.r2.dev/Gemini_Generated_Image_ach3uuach3uuach3%201.webp" 
+                  src="/images/manufacturing-facility.webp"
+                  srcSet="/images/manufacturing-facility-640.webp 640w, /images/manufacturing-facility-960.webp 960w, /images/manufacturing-facility.webp 1280w"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  width={1280}
+                  height={960}
+                  loading="lazy"
+                  decoding="async"
                   alt="Prestil Energy Manufacturing Facility" 
                   className="w-full h-full object-cover"
                 />
