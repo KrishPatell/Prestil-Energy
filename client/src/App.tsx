@@ -31,6 +31,8 @@ const CavitationNpshEspPumps = lazy(() => import("@/pages/blog/category-1-pumps/
 const SandSlurryPumpStageDesign = lazy(() => import("@/pages/blog/category-1-pumps/sand-slurry-pump-stage-design"));
 const EspPumpShaftCouplingAlignment = lazy(() => import("@/pages/blog/category-1-pumps/esp-pump-shaft-coupling-alignment"));
 const EspPumpIntakeScreenSandControl = lazy(() => import("@/pages/blog/category-1-pumps/esp-pump-intake-screen-sand-control"));
+const ConflictDrivenProductionReallocationEspPumpSizing = lazy(() => import("@/pages/blog/category-1-pumps/conflict-driven-production-reallocation-esp-pump-sizing"));
+const OffshoreRiskZonesRedundantPumpDesign = lazy(() => import("@/pages/blog/category-1-pumps/offshore-risk-zones-redundant-pump-design"));
 
 // Blog Posts - Category 2: Motors
 const SubmersibleMotorsGuide = lazy(() => import("@/pages/blog/category-2-motors/submersible-motors-guide"));
@@ -47,6 +49,7 @@ const EspMotorThrustBearingSystems = lazy(() => import("@/pages/blog/category-2-
 const SubmersibleMotorCoolingJacketDesign = lazy(() => import("@/pages/blog/category-2-motors/submersible-motor-cooling-jacket-design"));
 const MotorEfficiencyIeStandardsEsp = lazy(() => import("@/pages/blog/category-2-motors/motor-efficiency-ie-standards-esp"));
 const EspMotorVibrationMonitoring = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-vibration-monitoring"));
+const PowerGridInstabilityMotorSelectionEsp = lazy(() => import("@/pages/blog/category-2-motors/power-grid-instability-motor-selection-esp"));
 
 // Blog Posts - Category 3: Gas Separation
 const GasSeparatorsGuide = lazy(() => import("@/pages/blog/category-3-gas-separation/gas-separators-guide"));
@@ -58,6 +61,8 @@ const GasSeparatorIntakeHydraulics = lazy(() => import("@/pages/blog/category-3-
 const HighGorEspFluidHandling = lazy(() => import("@/pages/blog/category-3-gas-separation/high-gor-esp-fluid-handling"));
 const GasFluidPropertiesSeparatorDesign = lazy(() => import("@/pages/blog/category-3-gas-separation/gas-fluid-properties-separator-design"));
 const EspGasAnchorFluidVelocity = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-gas-anchor-fluid-velocity"));
+const WartimeAssociatedGasConstraintsSeparatorStrategy = lazy(() => import("@/pages/blog/category-3-gas-separation/wartime-associated-gas-constraints-separator-strategy"));
+const CrudeRoutingChangesGorEspGasHandling = lazy(() => import("@/pages/blog/category-3-gas-separation/crude-routing-changes-gor-esp-gas-handling"));
 
 // Blog Posts - Category 4: Integrated Solutions
 const CompleteESPSystems = lazy(() => import("@/pages/blog/category-4-integrated-solutions/complete-esp-systems"));
@@ -74,6 +79,9 @@ const EspSurfaceSwitchgearProtection = lazy(() => import("@/pages/blog/category-
 const EspDownholeMonitoringPressureSensors = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-downhole-monitoring-pressure-sensors"));
 const EspWellheadPenetratorCables = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-wellhead-penetrator-cables"));
 const EspSensorsVsdControlIntegration = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-sensors-vsd-control-integration"));
+const GeopoliticsOilPriceVolatilityEspOperations = lazy(() => import("@/pages/blog/category-4-integrated-solutions/geopolitics-oil-price-volatility-esp-operations"));
+const MaritimeChokepointsAndEspProjectPlanning = lazy(() => import("@/pages/blog/category-4-integrated-solutions/maritime-chokepoints-and-esp-project-planning"));
+const SanctionsComplianceAndEspSupplyChains = lazy(() => import("@/pages/blog/category-4-integrated-solutions/sanctions-compliance-and-esp-supply-chains"));
 
 // Blog Posts - Category 5: Maintenance
 const ESPInstallationGuide = lazy(() => import("@/pages/blog/category-5-maintenance/esp-installation-guide"));
@@ -85,6 +93,8 @@ const EspRiglessInterventionOptions = lazy(() => import("@/pages/blog/category-5
 const EspStorageHandlingField = lazy(() => import("@/pages/blog/category-5-maintenance/esp-storage-handling-field"));
 const EspPostPullInspectionAnalysis = lazy(() => import("@/pages/blog/category-5-maintenance/esp-post-pull-inspection-analysis"));
 const EspChemicalCompatibilityMaterials = lazy(() => import("@/pages/blog/category-5-maintenance/esp-chemical-compatibility-materials"));
+const StrategicSparesPlanningForEspUnderSanctions = lazy(() => import("@/pages/blog/category-5-maintenance/strategic-spares-planning-for-esp-under-sanctions"));
+const ContingencyMaintenancePlansDuringConflict = lazy(() => import("@/pages/blog/category-5-maintenance/contingency-maintenance-plans-during-conflict"));
 
 function Router() {
   return (
@@ -111,6 +121,8 @@ function Router() {
         <Route path="/blog/sand-slurry-pump-stage-design" component={SandSlurryPumpStageDesign} />
         <Route path="/blog/esp-pump-shaft-coupling-alignment" component={EspPumpShaftCouplingAlignment} />
         <Route path="/blog/esp-pump-intake-screen-sand-control" component={EspPumpIntakeScreenSandControl} />
+        <Route path="/blog/conflict-driven-production-reallocation-esp-pump-sizing" component={ConflictDrivenProductionReallocationEspPumpSizing} />
+        <Route path="/blog/offshore-risk-zones-redundant-pump-design" component={OffshoreRiskZonesRedundantPumpDesign} />
         {/* Category 2: Motors */}
         <Route path="/blog/submersible-motors-guide" component={SubmersibleMotorsGuide} />
         <Route path="/blog/motor-sections-comparison" component={MotorSectionsComparison} />
@@ -126,6 +138,7 @@ function Router() {
         <Route path="/blog/submersible-motor-cooling-jacket-design" component={SubmersibleMotorCoolingJacketDesign} />
         <Route path="/blog/motor-efficiency-ie-standards-esp" component={MotorEfficiencyIeStandardsEsp} />
         <Route path="/blog/esp-motor-vibration-monitoring" component={EspMotorVibrationMonitoring} />
+        <Route path="/blog/power-grid-instability-motor-selection-esp" component={PowerGridInstabilityMotorSelectionEsp} />
         {/* Category 3: Gas Separation */}
         <Route path="/blog/gas-separators-guide" component={GasSeparatorsGuide} />
         <Route path="/blog/rotary-gas-separators" component={RotaryGasSeparators} />
@@ -136,6 +149,8 @@ function Router() {
         <Route path="/blog/high-gor-esp-fluid-handling" component={HighGorEspFluidHandling} />
         <Route path="/blog/gas-fluid-properties-separator-design" component={GasFluidPropertiesSeparatorDesign} />
         <Route path="/blog/esp-gas-anchor-fluid-velocity" component={EspGasAnchorFluidVelocity} />
+        <Route path="/blog/wartime-associated-gas-constraints-separator-strategy" component={WartimeAssociatedGasConstraintsSeparatorStrategy} />
+        <Route path="/blog/crude-routing-changes-gor-esp-gas-handling" component={CrudeRoutingChangesGorEspGasHandling} />
         {/* Category 4: Integrated Solutions */}
         <Route path="/blog/complete-esp-systems" component={CompleteESPSystems} />
         <Route path="/blog/esp-system-design" component={ESPSystemDesign} />
@@ -151,6 +166,9 @@ function Router() {
         <Route path="/blog/esp-downhole-monitoring-pressure-sensors" component={EspDownholeMonitoringPressureSensors} />
         <Route path="/blog/esp-wellhead-penetrator-cables" component={EspWellheadPenetratorCables} />
         <Route path="/blog/esp-sensors-vsd-control-integration" component={EspSensorsVsdControlIntegration} />
+        <Route path="/blog/geopolitics-oil-price-volatility-esp-operations" component={GeopoliticsOilPriceVolatilityEspOperations} />
+        <Route path="/blog/maritime-chokepoints-and-esp-project-planning" component={MaritimeChokepointsAndEspProjectPlanning} />
+        <Route path="/blog/sanctions-compliance-and-esp-supply-chains" component={SanctionsComplianceAndEspSupplyChains} />
         {/* Category 5: Maintenance */}
         <Route path="/blog/esp-installation-guide" component={ESPInstallationGuide} />
         <Route path="/blog/esp-commissioning-checklist" component={ESPCommissioningChecklist} />
@@ -161,6 +179,8 @@ function Router() {
         <Route path="/blog/esp-storage-handling-field" component={EspStorageHandlingField} />
         <Route path="/blog/esp-post-pull-inspection-analysis" component={EspPostPullInspectionAnalysis} />
         <Route path="/blog/esp-chemical-compatibility-materials" component={EspChemicalCompatibilityMaterials} />
+        <Route path="/blog/strategic-spares-planning-for-esp-under-sanctions" component={StrategicSparesPlanningForEspUnderSanctions} />
+        <Route path="/blog/contingency-maintenance-plans-during-conflict" component={ContingencyMaintenancePlansDuringConflict} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
