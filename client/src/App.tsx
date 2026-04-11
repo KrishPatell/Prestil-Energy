@@ -105,6 +105,26 @@ const ContingencyMaintenancePlansDuringConflict = lazy(() => import("@/pages/blo
 const ConflictZoneWorkoverWindowOptimizationForEsp = lazy(() => import("@/pages/blog/category-5-maintenance/conflict-zone-workover-window-optimization-for-esp"));
 const PostConflictEspRestartIntegrityChecklist = lazy(() => import("@/pages/blog/category-5-maintenance/post-conflict-esp-restart-integrity-checklist"));
 const OffshoreEspInterventionRiskCostPlanningDuringConflict = lazy(() => import("@/pages/blog/category-5-maintenance/offshore-esp-intervention-risk-cost-planning-during-conflict"));
+const EspNpshrVsNpshaFieldVerification = lazy(() => import("@/pages/blog/category-1-pumps/esp-npshr-vs-npsha-field-verification"));
+const AbrasiveSlurryStageMaterialSelectionEsp = lazy(() => import("@/pages/blog/category-1-pumps/abrasive-slurry-stage-material-selection-esp"));
+const EspHydraulicResonanceMitigationPartialRate = lazy(() => import("@/pages/blog/category-1-pumps/esp-hydraulic-resonance-mitigation-partial-rate"));
+const MultiphaseIntakeConditioningBeforeEspStages = lazy(() => import("@/pages/blog/category-1-pumps/multiphase-intake-conditioning-before-esp-stages"));
+const EspMotorRotorDynamicBalanceOilfieldSpecs = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-rotor-dynamic-balance-oilfield-specs"));
+const DownholeTemperatureDeratingEspMotorLoadPlans = lazy(() => import("@/pages/blog/category-2-motors/downhole-temperature-derating-esp-motor-load-plans"));
+const VsdRampHarmonicsEspMotorThresholdTuning = lazy(() => import("@/pages/blog/category-2-motors/vsd-ramp-harmonics-esp-motor-threshold-tuning"));
+const EspMotorThrustVsPumpHydraulicCouplingReview = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-thrust-vs-pump-hydraulic-coupling-review"));
+const EspIntakeGasFractionStabilityKpis = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-intake-gas-fraction-stability-kpis"));
+const GasSlugScenariosSeparatorBypassGovernance = lazy(() => import("@/pages/blog/category-3-gas-separation/gas-slug-scenarios-separator-bypass-governance"));
+const LowHeadingFluidGasBreakoutAtEspIntake = lazy(() => import("@/pages/blog/category-3-gas-separation/low-heading-fluid-gas-breakout-at-esp-intake"));
+const RotaryGasSeparatorWearIndicatorsFieldReview = lazy(() => import("@/pages/blog/category-3-gas-separation/rotary-gas-separator-wear-indicators-field-review"));
+const EspScadaTaggingStandardsUpstreamTeams = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-scada-tagging-standards-upstream-teams"));
+const EdgeTelemetryLatencyEspAlarmArchitecture = lazy(() => import("@/pages/blog/category-4-integrated-solutions/edge-telemetry-latency-esp-alarm-architecture"));
+const BrownfieldEspRetrofitCivilElectricalBottlenecks = lazy(() => import("@/pages/blog/category-4-integrated-solutions/brownfield-esp-retrofit-civil-electrical-bottlenecks"));
+const EspPowerFactorCorrectionUtilityInterfaceBasics = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-power-factor-correction-utility-interface-basics"));
+const EspPullForensicMetadataAndTrendingBasics = lazy(() => import("@/pages/blog/category-5-maintenance/esp-pull-forensic-metadata-and-trending-basics"));
+const RigScheduleSlippageEspSparesBufferingStrategy = lazy(() => import("@/pages/blog/category-5-maintenance/rig-schedule-slippage-esp-spares-buffering-strategy"));
+const H2sSourServiceEspSealElastomerSelection = lazy(() => import("@/pages/blog/category-5-maintenance/h2s-sour-service-esp-seal-elastomer-selection"));
+const EspCommissioningVibrationBaselineAcceptance = lazy(() => import("@/pages/blog/category-5-maintenance/esp-commissioning-vibration-baseline-acceptance"));
 
 function Router() {
   return (
@@ -201,6 +221,26 @@ function Router() {
         <Route path="/blog/conflict-zone-workover-window-optimization-for-esp" component={ConflictZoneWorkoverWindowOptimizationForEsp} />
         <Route path="/blog/post-conflict-esp-restart-integrity-checklist" component={PostConflictEspRestartIntegrityChecklist} />
         <Route path="/blog/offshore-esp-intervention-risk-cost-planning-during-conflict" component={OffshoreEspInterventionRiskCostPlanningDuringConflict} />
+        <Route path="/blog/esp-npshr-vs-npsha-field-verification" component={EspNpshrVsNpshaFieldVerification} />
+        <Route path="/blog/abrasive-slurry-stage-material-selection-esp" component={AbrasiveSlurryStageMaterialSelectionEsp} />
+        <Route path="/blog/esp-hydraulic-resonance-mitigation-partial-rate" component={EspHydraulicResonanceMitigationPartialRate} />
+        <Route path="/blog/multiphase-intake-conditioning-before-esp-stages" component={MultiphaseIntakeConditioningBeforeEspStages} />
+        <Route path="/blog/esp-motor-rotor-dynamic-balance-oilfield-specs" component={EspMotorRotorDynamicBalanceOilfieldSpecs} />
+        <Route path="/blog/downhole-temperature-derating-esp-motor-load-plans" component={DownholeTemperatureDeratingEspMotorLoadPlans} />
+        <Route path="/blog/vsd-ramp-harmonics-esp-motor-threshold-tuning" component={VsdRampHarmonicsEspMotorThresholdTuning} />
+        <Route path="/blog/esp-motor-thrust-vs-pump-hydraulic-coupling-review" component={EspMotorThrustVsPumpHydraulicCouplingReview} />
+        <Route path="/blog/esp-intake-gas-fraction-stability-kpis" component={EspIntakeGasFractionStabilityKpis} />
+        <Route path="/blog/gas-slug-scenarios-separator-bypass-governance" component={GasSlugScenariosSeparatorBypassGovernance} />
+        <Route path="/blog/low-heading-fluid-gas-breakout-at-esp-intake" component={LowHeadingFluidGasBreakoutAtEspIntake} />
+        <Route path="/blog/rotary-gas-separator-wear-indicators-field-review" component={RotaryGasSeparatorWearIndicatorsFieldReview} />
+        <Route path="/blog/esp-scada-tagging-standards-upstream-teams" component={EspScadaTaggingStandardsUpstreamTeams} />
+        <Route path="/blog/edge-telemetry-latency-esp-alarm-architecture" component={EdgeTelemetryLatencyEspAlarmArchitecture} />
+        <Route path="/blog/brownfield-esp-retrofit-civil-electrical-bottlenecks" component={BrownfieldEspRetrofitCivilElectricalBottlenecks} />
+        <Route path="/blog/esp-power-factor-correction-utility-interface-basics" component={EspPowerFactorCorrectionUtilityInterfaceBasics} />
+        <Route path="/blog/esp-pull-forensic-metadata-and-trending-basics" component={EspPullForensicMetadataAndTrendingBasics} />
+        <Route path="/blog/rig-schedule-slippage-esp-spares-buffering-strategy" component={RigScheduleSlippageEspSparesBufferingStrategy} />
+        <Route path="/blog/h2s-sour-service-esp-seal-elastomer-selection" component={H2sSourServiceEspSealElastomerSelection} />
+        <Route path="/blog/esp-commissioning-vibration-baseline-acceptance" component={EspCommissioningVibrationBaselineAcceptance} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
