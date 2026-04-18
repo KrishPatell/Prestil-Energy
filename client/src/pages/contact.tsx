@@ -140,7 +140,7 @@ export default function Contact() {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 109/A, Nalanda Complex, NR Mansi Complex<br />
                 Mahavir Nagar society, Vastrapur<br />
-                Ahmedabad, Gujarat 380015
+                Ahmedabad, Gujarat 380015, India
               </p>
               <div className="mt-3 pt-3 border-t border-border space-y-2">
                 <div className="flex items-center gap-2">

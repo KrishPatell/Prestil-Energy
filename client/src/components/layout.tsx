@@ -265,7 +265,7 @@ export function Footer() {
                 <span className="text-muted-foreground">
                   109/A, Nalanda Complex, NR Mansi Complex<br />
                   Mahavir Nagar society, Vastrapur<br />
-                  Ahmedabad, Gujarat 380015
+                  Ahmedabad, Gujarat 380015, India
                 </span>
               </li>
               <li className="flex items-center gap-3">
