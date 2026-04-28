@@ -125,6 +125,16 @@ const EspPullForensicMetadataAndTrendingBasics = lazy(() => import("@/pages/blog
 const RigScheduleSlippageEspSparesBufferingStrategy = lazy(() => import("@/pages/blog/category-5-maintenance/rig-schedule-slippage-esp-spares-buffering-strategy"));
 const H2sSourServiceEspSealElastomerSelection = lazy(() => import("@/pages/blog/category-5-maintenance/h2s-sour-service-esp-seal-elastomer-selection"));
 const EspCommissioningVibrationBaselineAcceptance = lazy(() => import("@/pages/blog/category-5-maintenance/esp-commissioning-vibration-baseline-acceptance"));
+const EspStageEfficiencyDegradationTrendMethod = lazy(() => import("@/pages/blog/category-1-pumps/esp-stage-efficiency-degradation-trend-method"));
+const EspIntakeDepthAdjustmentUnderVariableDrawdown = lazy(() => import("@/pages/blog/category-1-pumps/esp-intake-depth-adjustment-under-variable-drawdown"));
+const EspMotorInsulationAgingSignalsFromCurrentData = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-insulation-aging-signals-from-current-data"));
+const EspMotorCableSpliceQualityControlFieldProtocol = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-cable-splice-quality-control-field-protocol"));
+const SeparatorPerformanceAuditUnderRisingGor = lazy(() => import("@/pages/blog/category-3-gas-separation/separator-performance-audit-under-rising-gor"));
+const EspGasLockNearMissInvestigationTemplate = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-gas-lock-near-miss-investigation-template"));
+const EspControlRoomAlarmRationalizationForMultiwellPads = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-control-room-alarm-rationalization-for-multiwell-pads"));
+const BrownfieldEspPowerUpgradeCutoverRiskChecklist = lazy(() => import("@/pages/blog/category-4-integrated-solutions/brownfield-esp-power-upgrade-cutover-risk-checklist"));
+const EspFailureCodeTaxonomyForFleetLearning = lazy(() => import("@/pages/blog/category-5-maintenance/esp-failure-code-taxonomy-for-fleet-learning"));
+const EspPreservationPlanForLongLeadSparesStorage = lazy(() => import("@/pages/blog/category-5-maintenance/esp-preservation-plan-for-long-lead-spares-storage"));
 
 function Router() {
   return (
@@ -241,6 +251,16 @@ function Router() {
         <Route path="/blog/rig-schedule-slippage-esp-spares-buffering-strategy" component={RigScheduleSlippageEspSparesBufferingStrategy} />
         <Route path="/blog/h2s-sour-service-esp-seal-elastomer-selection" component={H2sSourServiceEspSealElastomerSelection} />
         <Route path="/blog/esp-commissioning-vibration-baseline-acceptance" component={EspCommissioningVibrationBaselineAcceptance} />
+        <Route path="/blog/esp-stage-efficiency-degradation-trend-method" component={EspStageEfficiencyDegradationTrendMethod} />
+        <Route path="/blog/esp-intake-depth-adjustment-under-variable-drawdown" component={EspIntakeDepthAdjustmentUnderVariableDrawdown} />
+        <Route path="/blog/esp-motor-insulation-aging-signals-from-current-data" component={EspMotorInsulationAgingSignalsFromCurrentData} />
+        <Route path="/blog/esp-motor-cable-splice-quality-control-field-protocol" component={EspMotorCableSpliceQualityControlFieldProtocol} />
+        <Route path="/blog/separator-performance-audit-under-rising-gor" component={SeparatorPerformanceAuditUnderRisingGor} />
+        <Route path="/blog/esp-gas-lock-near-miss-investigation-template" component={EspGasLockNearMissInvestigationTemplate} />
+        <Route path="/blog/esp-control-room-alarm-rationalization-for-multiwell-pads" component={EspControlRoomAlarmRationalizationForMultiwellPads} />
+        <Route path="/blog/brownfield-esp-power-upgrade-cutover-risk-checklist" component={BrownfieldEspPowerUpgradeCutoverRiskChecklist} />
+        <Route path="/blog/esp-failure-code-taxonomy-for-fleet-learning" component={EspFailureCodeTaxonomyForFleetLearning} />
+        <Route path="/blog/esp-preservation-plan-for-long-lead-spares-storage" component={EspPreservationPlanForLongLeadSparesStorage} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>

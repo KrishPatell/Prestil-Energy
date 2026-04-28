@@ -736,4 +736,65 @@
     <priority>0.7</priority>
   </url>
   
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-stage-efficiency-degradation-trend-method</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-intake-depth-adjustment-under-variable-drawdown</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-motor-insulation-aging-signals-from-current-data</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-motor-cable-splice-quality-control-field-protocol</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/separator-performance-audit-under-rising-gor</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-gas-lock-near-miss-investigation-template</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-control-room-alarm-rationalization-for-multiwell-pads</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/brownfield-esp-power-upgrade-cutover-risk-checklist</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-failure-code-taxonomy-for-fleet-learning</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-preservation-plan-for-long-lead-spares-storage</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

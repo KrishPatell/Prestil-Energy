@@ -30,7 +30,7 @@ Complete SEO implementation for Prestil Energy website, ensuring 100/100 score o
 ### 3. **Sitemap.xml**
 - ✅ Created comprehensive sitemap (`client/public/sitemap.xml`)
 - ✅ Includes all main pages (Home, About, Products, Manufacturing, Contact, Blog)
-- ✅ Includes all blog posts in `blog-metadata.ts` (currently 100)
+- ✅ Includes all blog posts in `blog-metadata.ts` (currently 110)
 - ✅ Proper priority and changefreq settings
 - ✅ Lastmod dates set to 2026-01-11
 
@@ -187,8 +187,8 @@ Complete SEO implementation for Prestil Energy website, ensuring 100/100 score o
 
 ## 📊 SEO Metadata Summary
 
-- **Total Pages**: 106 (6 main routes including `/blog` index + 100 blog posts; see `blog-metadata.ts`)
-- **Blog Posts**: 100 (all with unique SEO metadata in `blog-metadata.ts`)
+- **Total Pages**: 116 (6 main routes including `/blog` index + 110 blog posts; see `blog-metadata.ts`)
+- **Blog Posts**: 110 (all with unique SEO metadata in `blog-metadata.ts`)
 - **Structured Data Types**: 6 (Organization, WebSite, Article, Blog, CollectionPage, AboutPage)
 - **Sitemap Entries**: 66
 - **Keywords Coverage**: Comprehensive across all pages
