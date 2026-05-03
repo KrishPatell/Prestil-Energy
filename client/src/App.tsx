@@ -135,6 +135,16 @@ const EspControlRoomAlarmRationalizationForMultiwellPads = lazy(() => import("@/
 const BrownfieldEspPowerUpgradeCutoverRiskChecklist = lazy(() => import("@/pages/blog/category-4-integrated-solutions/brownfield-esp-power-upgrade-cutover-risk-checklist"));
 const EspFailureCodeTaxonomyForFleetLearning = lazy(() => import("@/pages/blog/category-5-maintenance/esp-failure-code-taxonomy-for-fleet-learning"));
 const EspPreservationPlanForLongLeadSparesStorage = lazy(() => import("@/pages/blog/category-5-maintenance/esp-preservation-plan-for-long-lead-spares-storage"));
+const EspBoosterPumpConfigurationHighViscosityOils = lazy(() => import("@/pages/blog/category-1-pumps/esp-booster-pump-configuration-high-viscosity-oils"));
+const EmulsionViscosityShiftEspPumpCurveGovernance = lazy(() => import("@/pages/blog/category-1-pumps/emulsion-viscosity-shift-esp-pump-curve-governance"));
+const EspMotorBearingLubricationFilmHealthIndicators = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-bearing-lubrication-film-health-indicators"));
+const EspMotorStartupCurrentCapTestingProtocol = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-startup-current-cap-testing-protocol"));
+const FoamyOilGasSeparatorInletConditioningChecklist = lazy(() => import("@/pages/blog/category-3-gas-separation/foamy-oil-gas-separator-inlet-conditioning-checklist"));
+const Co2RichAssociatedGasEspIntakeMarginPlanning = lazy(() => import("@/pages/blog/category-3-gas-separation/co2-rich-associated-gas-esp-intake-margin-planning"));
+const EspOtNetworkSegmentationBaselineForFieldSites = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-ot-network-segmentation-baseline-for-field-sites"));
+const EspRunbookHandoverFromProjectToOperations = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-runbook-handover-from-project-to-operations"));
+const EspLiftingProcedureLoadRiggingGovernance = lazy(() => import("@/pages/blog/category-5-maintenance/esp-lifting-procedure-load-rigging-governance"));
+const EspWinterizationCondensationControlFieldChecklist = lazy(() => import("@/pages/blog/category-5-maintenance/esp-winterization-condensation-control-field-checklist"));
 
 function Router() {
   return (
@@ -261,6 +271,16 @@ function Router() {
         <Route path="/blog/brownfield-esp-power-upgrade-cutover-risk-checklist" component={BrownfieldEspPowerUpgradeCutoverRiskChecklist} />
         <Route path="/blog/esp-failure-code-taxonomy-for-fleet-learning" component={EspFailureCodeTaxonomyForFleetLearning} />
         <Route path="/blog/esp-preservation-plan-for-long-lead-spares-storage" component={EspPreservationPlanForLongLeadSparesStorage} />
+        <Route path="/blog/esp-booster-pump-configuration-high-viscosity-oils" component={EspBoosterPumpConfigurationHighViscosityOils} />
+        <Route path="/blog/emulsion-viscosity-shift-esp-pump-curve-governance" component={EmulsionViscosityShiftEspPumpCurveGovernance} />
+        <Route path="/blog/esp-motor-bearing-lubrication-film-health-indicators" component={EspMotorBearingLubricationFilmHealthIndicators} />
+        <Route path="/blog/esp-motor-startup-current-cap-testing-protocol" component={EspMotorStartupCurrentCapTestingProtocol} />
+        <Route path="/blog/foamy-oil-gas-separator-inlet-conditioning-checklist" component={FoamyOilGasSeparatorInletConditioningChecklist} />
+        <Route path="/blog/co2-rich-associated-gas-esp-intake-margin-planning" component={Co2RichAssociatedGasEspIntakeMarginPlanning} />
+        <Route path="/blog/esp-ot-network-segmentation-baseline-for-field-sites" component={EspOtNetworkSegmentationBaselineForFieldSites} />
+        <Route path="/blog/esp-runbook-handover-from-project-to-operations" component={EspRunbookHandoverFromProjectToOperations} />
+        <Route path="/blog/esp-lifting-procedure-load-rigging-governance" component={EspLiftingProcedureLoadRiggingGovernance} />
+        <Route path="/blog/esp-winterization-condensation-control-field-checklist" component={EspWinterizationCondensationControlFieldChecklist} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>

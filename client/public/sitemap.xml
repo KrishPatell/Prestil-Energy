@@ -797,4 +797,65 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-booster-pump-configuration-high-viscosity-oils</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/emulsion-viscosity-shift-esp-pump-curve-governance</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-motor-bearing-lubrication-film-health-indicators</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-motor-startup-current-cap-testing-protocol</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/foamy-oil-gas-separator-inlet-conditioning-checklist</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/co2-rich-associated-gas-esp-intake-margin-planning</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-ot-network-segmentation-baseline-for-field-sites</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-runbook-handover-from-project-to-operations</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-lifting-procedure-load-rigging-governance</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-winterization-condensation-control-field-checklist</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
