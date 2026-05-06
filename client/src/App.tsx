@@ -145,6 +145,16 @@ const EspOtNetworkSegmentationBaselineForFieldSites = lazy(() => import("@/pages
 const EspRunbookHandoverFromProjectToOperations = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-runbook-handover-from-project-to-operations"));
 const EspLiftingProcedureLoadRiggingGovernance = lazy(() => import("@/pages/blog/category-5-maintenance/esp-lifting-procedure-load-rigging-governance"));
 const EspWinterizationCondensationControlFieldChecklist = lazy(() => import("@/pages/blog/category-5-maintenance/esp-winterization-condensation-control-field-checklist"));
+const EspDischargePressureInstabilityRootCauseGrid = lazy(() => import("@/pages/blog/category-1-pumps/esp-discharge-pressure-instability-root-cause-grid"));
+const EspStageLoadingEnvelopeForRateRampOperations = lazy(() => import("@/pages/blog/category-1-pumps/esp-stage-loading-envelope-for-rate-ramp-operations"));
+const EspMotorThermalRunawayPreventionUnderCycling = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-thermal-runaway-prevention-under-cycling"));
+const EspMotorGroundFaultTrendResponsePlaybook = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-ground-fault-trend-response-playbook"));
+const SeparatorCarryunderRiskWhenGorDropsSuddenly = lazy(() => import("@/pages/blog/category-3-gas-separation/separator-carryunder-risk-when-gor-drops-suddenly"));
+const EspIntakeBubblePointMarginOperationsGuide = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-intake-bubble-point-margin-operations-guide"));
+const EspKpiGovernanceDashboardForAssetTeams = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-kpi-governance-dashboard-for-asset-teams"));
+const EspSpareCompatibilityMatrixDigitalControl = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-spare-compatibility-matrix-digital-control"));
+const EspPullPriorityScoringForConstrainedCrews = lazy(() => import("@/pages/blog/category-5-maintenance/esp-pull-priority-scoring-for-constrained-crews"));
+const EspPostCommissioningStabilityAudit30DayPlan = lazy(() => import("@/pages/blog/category-5-maintenance/esp-post-commissioning-stability-audit-30-day-plan"));
 
 function Router() {
   return (
@@ -281,6 +291,16 @@ function Router() {
         <Route path="/blog/esp-runbook-handover-from-project-to-operations" component={EspRunbookHandoverFromProjectToOperations} />
         <Route path="/blog/esp-lifting-procedure-load-rigging-governance" component={EspLiftingProcedureLoadRiggingGovernance} />
         <Route path="/blog/esp-winterization-condensation-control-field-checklist" component={EspWinterizationCondensationControlFieldChecklist} />
+        <Route path="/blog/esp-discharge-pressure-instability-root-cause-grid" component={EspDischargePressureInstabilityRootCauseGrid} />
+        <Route path="/blog/esp-stage-loading-envelope-for-rate-ramp-operations" component={EspStageLoadingEnvelopeForRateRampOperations} />
+        <Route path="/blog/esp-motor-thermal-runaway-prevention-under-cycling" component={EspMotorThermalRunawayPreventionUnderCycling} />
+        <Route path="/blog/esp-motor-ground-fault-trend-response-playbook" component={EspMotorGroundFaultTrendResponsePlaybook} />
+        <Route path="/blog/separator-carryunder-risk-when-gor-drops-suddenly" component={SeparatorCarryunderRiskWhenGorDropsSuddenly} />
+        <Route path="/blog/esp-intake-bubble-point-margin-operations-guide" component={EspIntakeBubblePointMarginOperationsGuide} />
+        <Route path="/blog/esp-kpi-governance-dashboard-for-asset-teams" component={EspKpiGovernanceDashboardForAssetTeams} />
+        <Route path="/blog/esp-spare-compatibility-matrix-digital-control" component={EspSpareCompatibilityMatrixDigitalControl} />
+        <Route path="/blog/esp-pull-priority-scoring-for-constrained-crews" component={EspPullPriorityScoringForConstrainedCrews} />
+        <Route path="/blog/esp-post-commissioning-stability-audit-30-day-plan" component={EspPostCommissioningStabilityAudit30DayPlan} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>

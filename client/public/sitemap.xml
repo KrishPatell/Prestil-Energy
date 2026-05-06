@@ -858,4 +858,65 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-discharge-pressure-instability-root-cause-grid</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-stage-loading-envelope-for-rate-ramp-operations</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-motor-thermal-runaway-prevention-under-cycling</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-motor-ground-fault-trend-response-playbook</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/separator-carryunder-risk-when-gor-drops-suddenly</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-intake-bubble-point-margin-operations-guide</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-kpi-governance-dashboard-for-asset-teams</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-spare-compatibility-matrix-digital-control</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-pull-priority-scoring-for-constrained-crews</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-post-commissioning-stability-audit-30-day-plan</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
