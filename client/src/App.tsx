@@ -155,6 +155,16 @@ const EspKpiGovernanceDashboardForAssetTeams = lazy(() => import("@/pages/blog/c
 const EspSpareCompatibilityMatrixDigitalControl = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-spare-compatibility-matrix-digital-control"));
 const EspPullPriorityScoringForConstrainedCrews = lazy(() => import("@/pages/blog/category-5-maintenance/esp-pull-priority-scoring-for-constrained-crews"));
 const EspPostCommissioningStabilityAudit30DayPlan = lazy(() => import("@/pages/blog/category-5-maintenance/esp-post-commissioning-stability-audit-30-day-plan"));
+const EspFirstStageCavitationWatchlistForHighRateWells = lazy(() => import("@/pages/blog/category-1-pumps/esp-first-stage-cavitation-watchlist-for-high-rate-wells"));
+const EspPumpShaftRunoutToleranceFieldAcceptance = lazy(() => import("@/pages/blog/category-1-pumps/esp-pump-shaft-runout-tolerance-field-acceptance"));
+const EspMotorWindingResistanceTrendInterpretation = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-winding-resistance-trend-interpretation"));
+const EspMotorCoolingJacketFlowVerificationProtocol = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-cooling-jacket-flow-verification-protocol"));
+const EspGasAnchorSizingUnderTransientSlugLoad = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-gas-anchor-sizing-under-transient-slug-load"));
+const EspSeparatorEfficiencyDegradationWeeklyReview = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-separator-efficiency-degradation-weekly-review"));
+const EspRemoteAccessSecurityBaselineForVendors = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-remote-access-security-baseline-for-vendors"));
+const EspDailyOperationsHandoverLogTemplate = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-daily-operations-handover-log-template"));
+const EspComponentSerialTraceabilityForPullAnalysis = lazy(() => import("@/pages/blog/category-5-maintenance/esp-component-serial-traceability-for-pull-analysis"));
+const EspWorkoverReadinessChecklist72HourWindow = lazy(() => import("@/pages/blog/category-5-maintenance/esp-workover-readiness-checklist-72-hour-window"));
 
 function Router() {
   return (
@@ -301,6 +311,16 @@ function Router() {
         <Route path="/blog/esp-spare-compatibility-matrix-digital-control" component={EspSpareCompatibilityMatrixDigitalControl} />
         <Route path="/blog/esp-pull-priority-scoring-for-constrained-crews" component={EspPullPriorityScoringForConstrainedCrews} />
         <Route path="/blog/esp-post-commissioning-stability-audit-30-day-plan" component={EspPostCommissioningStabilityAudit30DayPlan} />
+        <Route path="/blog/esp-first-stage-cavitation-watchlist-for-high-rate-wells" component={EspFirstStageCavitationWatchlistForHighRateWells} />
+        <Route path="/blog/esp-pump-shaft-runout-tolerance-field-acceptance" component={EspPumpShaftRunoutToleranceFieldAcceptance} />
+        <Route path="/blog/esp-motor-winding-resistance-trend-interpretation" component={EspMotorWindingResistanceTrendInterpretation} />
+        <Route path="/blog/esp-motor-cooling-jacket-flow-verification-protocol" component={EspMotorCoolingJacketFlowVerificationProtocol} />
+        <Route path="/blog/esp-gas-anchor-sizing-under-transient-slug-load" component={EspGasAnchorSizingUnderTransientSlugLoad} />
+        <Route path="/blog/esp-separator-efficiency-degradation-weekly-review" component={EspSeparatorEfficiencyDegradationWeeklyReview} />
+        <Route path="/blog/esp-remote-access-security-baseline-for-vendors" component={EspRemoteAccessSecurityBaselineForVendors} />
+        <Route path="/blog/esp-daily-operations-handover-log-template" component={EspDailyOperationsHandoverLogTemplate} />
+        <Route path="/blog/esp-component-serial-traceability-for-pull-analysis" component={EspComponentSerialTraceabilityForPullAnalysis} />
+        <Route path="/blog/esp-workover-readiness-checklist-72-hour-window" component={EspWorkoverReadinessChecklist72HourWindow} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
