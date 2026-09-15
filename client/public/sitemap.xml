@@ -980,4 +980,65 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-diffuser-wear-mapping-from-head-loss-trends</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-check-valve-leakage-detection-after-shutdowns</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-motor-oil-dielectric-test-acceptance-criteria</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-protector-chamber-pressure-equalization-checks</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-tandem-separator-staging-for-high-gor-pads</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/free-gas-volume-fraction-limits-before-pump-intake</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-vsd-parameter-backup-restore-change-control</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/multiwell-esp-load-shedding-under-feeder-constraints</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-cable-armor-corrosion-inspection-after-pull</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://prestil-energy.com/blog/esp-workshop-cleanliness-and-assembly-contamination-control</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

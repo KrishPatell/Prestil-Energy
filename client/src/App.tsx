@@ -165,6 +165,16 @@ const EspRemoteAccessSecurityBaselineForVendors = lazy(() => import("@/pages/blo
 const EspDailyOperationsHandoverLogTemplate = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-daily-operations-handover-log-template"));
 const EspComponentSerialTraceabilityForPullAnalysis = lazy(() => import("@/pages/blog/category-5-maintenance/esp-component-serial-traceability-for-pull-analysis"));
 const EspWorkoverReadinessChecklist72HourWindow = lazy(() => import("@/pages/blog/category-5-maintenance/esp-workover-readiness-checklist-72-hour-window"));
+const EspDiffuserWearMappingFromHeadLossTrends = lazy(() => import("@/pages/blog/category-1-pumps/esp-diffuser-wear-mapping-from-head-loss-trends"));
+const EspCheckValveLeakageDetectionAfterShutdowns = lazy(() => import("@/pages/blog/category-1-pumps/esp-check-valve-leakage-detection-after-shutdowns"));
+const EspMotorOilDielectricTestAcceptanceCriteria = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-oil-dielectric-test-acceptance-criteria"));
+const EspProtectorChamberPressureEqualizationChecks = lazy(() => import("@/pages/blog/category-2-motors/esp-protector-chamber-pressure-equalization-checks"));
+const EspTandemSeparatorStagingForHighGorPads = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-tandem-separator-staging-for-high-gor-pads"));
+const FreeGasVolumeFractionLimitsBeforePumpIntake = lazy(() => import("@/pages/blog/category-3-gas-separation/free-gas-volume-fraction-limits-before-pump-intake"));
+const EspVsdParameterBackupRestoreChangeControl = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-vsd-parameter-backup-restore-change-control"));
+const MultiwellEspLoadSheddingUnderFeederConstraints = lazy(() => import("@/pages/blog/category-4-integrated-solutions/multiwell-esp-load-shedding-under-feeder-constraints"));
+const EspCableArmorCorrosionInspectionAfterPull = lazy(() => import("@/pages/blog/category-5-maintenance/esp-cable-armor-corrosion-inspection-after-pull"));
+const EspWorkshopCleanlinessAndAssemblyContaminationControl = lazy(() => import("@/pages/blog/category-5-maintenance/esp-workshop-cleanliness-and-assembly-contamination-control"));
 
 function Router() {
   return (
@@ -321,6 +331,16 @@ function Router() {
         <Route path="/blog/esp-daily-operations-handover-log-template" component={EspDailyOperationsHandoverLogTemplate} />
         <Route path="/blog/esp-component-serial-traceability-for-pull-analysis" component={EspComponentSerialTraceabilityForPullAnalysis} />
         <Route path="/blog/esp-workover-readiness-checklist-72-hour-window" component={EspWorkoverReadinessChecklist72HourWindow} />
+        <Route path="/blog/esp-diffuser-wear-mapping-from-head-loss-trends" component={EspDiffuserWearMappingFromHeadLossTrends} />
+        <Route path="/blog/esp-check-valve-leakage-detection-after-shutdowns" component={EspCheckValveLeakageDetectionAfterShutdowns} />
+        <Route path="/blog/esp-motor-oil-dielectric-test-acceptance-criteria" component={EspMotorOilDielectricTestAcceptanceCriteria} />
+        <Route path="/blog/esp-protector-chamber-pressure-equalization-checks" component={EspProtectorChamberPressureEqualizationChecks} />
+        <Route path="/blog/esp-tandem-separator-staging-for-high-gor-pads" component={EspTandemSeparatorStagingForHighGorPads} />
+        <Route path="/blog/free-gas-volume-fraction-limits-before-pump-intake" component={FreeGasVolumeFractionLimitsBeforePumpIntake} />
+        <Route path="/blog/esp-vsd-parameter-backup-restore-change-control" component={EspVsdParameterBackupRestoreChangeControl} />
+        <Route path="/blog/multiwell-esp-load-shedding-under-feeder-constraints" component={MultiwellEspLoadSheddingUnderFeederConstraints} />
+        <Route path="/blog/esp-cable-armor-corrosion-inspection-after-pull" component={EspCableArmorCorrosionInspectionAfterPull} />
+        <Route path="/blog/esp-workshop-cleanliness-and-assembly-contamination-control" component={EspWorkshopCleanlinessAndAssemblyContaminationControl} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
