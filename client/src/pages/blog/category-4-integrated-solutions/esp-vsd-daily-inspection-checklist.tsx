@@ -1,0 +1,5 @@
+import { ConciseEspBlog } from "../concise-esp-blog";
+
+export default function EspVsdDailyInspectionChecklist() {
+  return <ConciseEspBlog title="ESP VSD Daily Inspection Checklist" category="integrated-solutions" image="/images/3d_technical_render_of_submersible_pump.png" product={{ id: "5", title: "ESP Control Station", image: "/images/products/20240717100620530.png", href: "/products#integrated-solutions" }} introduction="A short daily VSD check finds small electrical and cooling issues before they become unplanned shutdowns." signals="Review active alarms, cabinet temperature, fan operation, input quality, output current, and any parameter changes." actions="Log exceptions, correct housekeeping issues promptly, and route protection or parameter changes through formal approval." relatedPosts={[{ slug: "esp-vsd-parameter-backup-restore-change-control", title: "ESP VSD Parameter Backup, Restore, and Change Control" }, { slug: "esp-control-stations", title: "ESP Control Stations" }]} />;
+}

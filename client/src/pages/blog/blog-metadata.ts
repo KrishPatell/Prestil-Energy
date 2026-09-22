@@ -2271,4 +2271,34 @@ export const blogPostsMetadata: BlogPostMetadata[] = [
     relatedProducts: ['5'],
     relatedPosts: ['esp-storage-handling-field', 'esp-preservation-plan-for-long-lead-spares-storage', 'esp-installation-guide'],
   },
+  {
+    slug: 'esp-pump-startup-rate-ramp-checklist', title: 'ESP Pump Startup Rate Ramp Checklist', metaTitle: 'ESP Pump Startup Checklist | Prestil Energy', metaDescription: 'A simple ESP startup rate-ramp checklist for safer, more stable pump commissioning.', keywords: ['ESP startup', 'rate ramp', 'pump checklist'], category: 'pumps', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/3d_technical_render_of_submersible_pump.png', excerpt: 'Use controlled rate ramps to support stable ESP startups.', relatedProducts: ['1'], relatedPosts: ['esp-check-valve-leakage-detection-after-shutdowns', 'esp-commissioning-checklist'],
+  },
+  {
+    slug: 'esp-intake-pressure-trend-basics', title: 'ESP Intake Pressure Trend Basics', metaTitle: 'ESP Intake Pressure Trends | Prestil Energy', metaDescription: 'Simple guidance for reviewing ESP intake pressure trends and protecting operating margin.', keywords: ['ESP intake pressure', 'pressure trends', 'pump monitoring'], category: 'pumps', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/3d_technical_render_of_submersible_pump.png', excerpt: 'Use intake pressure trends to spot changing ESP conditions early.', relatedProducts: ['1'], relatedPosts: ['pump-performance-curves', 'preventing-gas-lock'],
+  },
+  {
+    slug: 'esp-motor-temperature-alarm-response', title: 'ESP Motor Temperature Alarm Response', metaTitle: 'ESP Motor Temperature Alarm Response | Prestil Energy', metaDescription: 'A clear, practical response guide for ESP motor temperature alarms.', keywords: ['ESP motor temperature', 'motor alarm', 'motor protection'], category: 'motors', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/industrial_electric_motor_studio_shot.png', excerpt: 'Respond to motor temperature alarms with a clear, evidence-based process.', relatedProducts: ['2'], relatedPosts: ['motor-thermal-management', 'submersible-motor-cooling-jacket-design'],
+  },
+  {
+    slug: 'esp-motor-cable-connection-checks', title: 'ESP Motor Cable Connection Checks', metaTitle: 'ESP Motor Cable Connection Checks | Prestil Energy', metaDescription: 'Essential ESP motor cable connection checks before energizing the system.', keywords: ['ESP cable', 'motor connection', 'electrical checks'], category: 'motors', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/industrial_electric_motor_studio_shot.png', excerpt: 'Simple cable connection checks to protect ESP motor reliability.', relatedProducts: ['2'], relatedPosts: ['esp-motor-cable-splice-quality-control-field-protocol', 'esp-cables-guide'],
+  },
+  {
+    slug: 'esp-gas-lock-warning-signs', title: 'ESP Gas Lock Warning Signs', metaTitle: 'ESP Gas Lock Warning Signs | Prestil Energy', metaDescription: 'Recognize practical ESP gas lock warning signs before pump performance drops further.', keywords: ['ESP gas lock', 'free gas', 'gas handling'], category: 'gas-separation', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/products/gas-separator-gs5-200.png', excerpt: 'Recognize early gas lock signs and return the ESP to a stable range.', relatedProducts: ['6'], relatedPosts: ['preventing-gas-lock', 'free-gas-volume-fraction-limits-before-pump-intake'],
+  },
+  {
+    slug: 'esp-gas-separator-installation-basics', title: 'ESP Gas Separator Installation Basics', metaTitle: 'ESP Gas Separator Installation Basics | Prestil Energy', metaDescription: 'A straightforward guide to ESP gas separator installation checks.', keywords: ['gas separator', 'ESP installation', 'gas handling'], category: 'gas-separation', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/products/gas-separator-gs5-200.png', excerpt: 'Key checks for a dependable ESP gas separator installation.', relatedProducts: ['6'], relatedPosts: ['gas-separator-sizing', 'rotary-gas-separators'],
+  },
+  {
+    slug: 'esp-vsd-daily-inspection-checklist', title: 'ESP VSD Daily Inspection Checklist', metaTitle: 'ESP VSD Daily Inspection Checklist | Prestil Energy', metaDescription: 'A concise daily inspection checklist for ESP variable speed drives.', keywords: ['ESP VSD', 'daily inspection', 'drive checklist'], category: 'integrated-solutions', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/3d_technical_render_of_submersible_pump.png', excerpt: 'A short VSD checklist for early detection of drive issues.', relatedProducts: ['5'], relatedPosts: ['esp-vsd-parameter-backup-restore-change-control', 'esp-control-stations'],
+  },
+  {
+    slug: 'esp-well-performance-daily-review', title: 'ESP Well Performance Daily Review', metaTitle: 'ESP Well Performance Daily Review | Prestil Energy', metaDescription: 'A simple daily ESP well-performance review to identify changes early.', keywords: ['ESP performance', 'daily review', 'well monitoring'], category: 'integrated-solutions', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/3d_technical_render_of_submersible_pump.png', excerpt: 'Turn daily ESP data into clear performance actions.', relatedProducts: ['5'], relatedPosts: ['esp-telemetry-monitoring', 'esp-kpi-governance-dashboard-for-asset-teams'],
+  },
+  {
+    slug: 'esp-spare-parts-storage-basics', title: 'ESP Spare Parts Storage Basics', metaTitle: 'ESP Spare Parts Storage Basics | Prestil Energy', metaDescription: 'Simple storage practices to keep ESP spare parts ready for service.', keywords: ['ESP spares', 'spare parts storage', 'equipment preservation'], category: 'maintenance', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/3d_technical_render_of_submersible_pump.png', excerpt: 'Keep ESP spares ready through clean, controlled storage.', relatedProducts: ['5'], relatedPosts: ['esp-storage-handling-field', 'esp-preservation-plan-for-long-lead-spares-storage'],
+  },
+  {
+    slug: 'esp-pre-run-assembly-checklist', title: 'ESP Pre-Run Assembly Checklist', metaTitle: 'ESP Pre-Run Assembly Checklist | Prestil Energy', metaDescription: 'A clear final assembly checklist before running an ESP string.', keywords: ['ESP assembly', 'pre-run checklist', 'ESP installation'], category: 'maintenance', author: 'Prestil Energy India', date: 'September 2026', readTime: 5, heroImage: '/images/3d_technical_render_of_submersible_pump.png', excerpt: 'Use one final checklist before releasing an ESP string for run-in.', relatedProducts: ['5'], relatedPosts: ['esp-commissioning-checklist', 'esp-workshop-cleanliness-and-assembly-contamination-control'],
+  },
 ];

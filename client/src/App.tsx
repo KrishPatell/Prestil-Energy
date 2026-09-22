@@ -175,6 +175,16 @@ const EspVsdParameterBackupRestoreChangeControl = lazy(() => import("@/pages/blo
 const MultiwellEspLoadSheddingUnderFeederConstraints = lazy(() => import("@/pages/blog/category-4-integrated-solutions/multiwell-esp-load-shedding-under-feeder-constraints"));
 const EspCableArmorCorrosionInspectionAfterPull = lazy(() => import("@/pages/blog/category-5-maintenance/esp-cable-armor-corrosion-inspection-after-pull"));
 const EspWorkshopCleanlinessAndAssemblyContaminationControl = lazy(() => import("@/pages/blog/category-5-maintenance/esp-workshop-cleanliness-and-assembly-contamination-control"));
+const EspPumpStartupRateRampChecklist = lazy(() => import("@/pages/blog/category-1-pumps/esp-pump-startup-rate-ramp-checklist"));
+const EspIntakePressureTrendBasics = lazy(() => import("@/pages/blog/category-1-pumps/esp-intake-pressure-trend-basics"));
+const EspMotorTemperatureAlarmResponse = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-temperature-alarm-response"));
+const EspMotorCableConnectionChecks = lazy(() => import("@/pages/blog/category-2-motors/esp-motor-cable-connection-checks"));
+const EspGasLockWarningSigns = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-gas-lock-warning-signs"));
+const EspGasSeparatorInstallationBasics = lazy(() => import("@/pages/blog/category-3-gas-separation/esp-gas-separator-installation-basics"));
+const EspVsdDailyInspectionChecklist = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-vsd-daily-inspection-checklist"));
+const EspWellPerformanceDailyReview = lazy(() => import("@/pages/blog/category-4-integrated-solutions/esp-well-performance-daily-review"));
+const EspSparePartsStorageBasics = lazy(() => import("@/pages/blog/category-5-maintenance/esp-spare-parts-storage-basics"));
+const EspPreRunAssemblyChecklist = lazy(() => import("@/pages/blog/category-5-maintenance/esp-pre-run-assembly-checklist"));
 
 function Router() {
   return (
@@ -341,6 +351,16 @@ function Router() {
         <Route path="/blog/multiwell-esp-load-shedding-under-feeder-constraints" component={MultiwellEspLoadSheddingUnderFeederConstraints} />
         <Route path="/blog/esp-cable-armor-corrosion-inspection-after-pull" component={EspCableArmorCorrosionInspectionAfterPull} />
         <Route path="/blog/esp-workshop-cleanliness-and-assembly-contamination-control" component={EspWorkshopCleanlinessAndAssemblyContaminationControl} />
+        <Route path="/blog/esp-pump-startup-rate-ramp-checklist" component={EspPumpStartupRateRampChecklist} />
+        <Route path="/blog/esp-intake-pressure-trend-basics" component={EspIntakePressureTrendBasics} />
+        <Route path="/blog/esp-motor-temperature-alarm-response" component={EspMotorTemperatureAlarmResponse} />
+        <Route path="/blog/esp-motor-cable-connection-checks" component={EspMotorCableConnectionChecks} />
+        <Route path="/blog/esp-gas-lock-warning-signs" component={EspGasLockWarningSigns} />
+        <Route path="/blog/esp-gas-separator-installation-basics" component={EspGasSeparatorInstallationBasics} />
+        <Route path="/blog/esp-vsd-daily-inspection-checklist" component={EspVsdDailyInspectionChecklist} />
+        <Route path="/blog/esp-well-performance-daily-review" component={EspWellPerformanceDailyReview} />
+        <Route path="/blog/esp-spare-parts-storage-basics" component={EspSparePartsStorageBasics} />
+        <Route path="/blog/esp-pre-run-assembly-checklist" component={EspPreRunAssemblyChecklist} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>

@@ -1,0 +1,5 @@
+import { ConciseEspBlog } from "../concise-esp-blog";
+
+export default function EspPreRunAssemblyChecklist() {
+  return <ConciseEspBlog title="ESP Pre-Run Assembly Checklist" category="maintenance" image="/images/3d_technical_render_of_submersible_pump.png" product={{ id: "5", title: "ESP System Components", image: "/images/products/20240717100620530.png", href: "/products#integrated-solutions" }} introduction="A final assembly check prevents simple documentation, cleanliness, and connection errors from reaching the well." signals="Verify component identity, serial numbers, torque records, electrical tests, fluid fill, seals, and lifting points." actions="Use one signed checklist, pause for unresolved items, and release the string only when all required checks are complete." relatedPosts={[{ slug: "esp-commissioning-checklist", title: "ESP Commissioning Checklist" }, { slug: "esp-workshop-cleanliness-and-assembly-contamination-control", title: "ESP Workshop Cleanliness and Assembly Contamination Control" }]} />;
+}
